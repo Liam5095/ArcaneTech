@@ -4,6 +4,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.wickedbog.arcanetechmod.core.init.ItemInit;
+import net.wickedbog.arcanetechmod.data.DataGenerators;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 
@@ -15,8 +17,10 @@ public class ArcaneTechMod {
 
     public ArcaneTechMod(IEventBus bus) {
         // Registers
+        ItemInit.ITEMS.register(bus);
 
         // Listeners
+        bus.addListener(DataGenerators::gatherData);
 
         bus.addListener(FMLClientSetupEvent.class, (fmlClientSetupEvent -> {
             fmlClientSetupEvent.enqueueWork(() -> {
