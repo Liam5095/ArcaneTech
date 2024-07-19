@@ -8,8 +8,11 @@ import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.data.lang.ModEnLangProvider;
 import net.wickedbog.arcanetechmod.data.lootable.ModLootTables;
 import net.wickedbog.arcanetechmod.data.recipes.MainModRecipeProvider;
+import net.wickedbog.arcanetechmod.data.tags.ModBlockTagProvider;
+import net.wickedbog.arcanetechmod.data.tags.ModItemTagProvider;
 import net.wickedbog.arcanetechmod.data.texture.ModBlockStateProvider;
 import net.wickedbog.arcanetechmod.data.texture.ModItemStateProvider;
+import net.wickedbog.arcanetechmod.data.world.ModWorldGenProvider;
 
 public class DataGenerators {
 
@@ -24,6 +27,10 @@ public class DataGenerators {
             generator.addProvider(true, new ModBlockStateProvider(output, existingFileHelper));
             generator.addProvider(true, new ModLootTables(output));
             generator.addProvider(true, new MainModRecipeProvider(generator));
+            ModBlockTagProvider blockTagProvider = new ModBlockTagProvider(output, event.getLookupProvider(), existingFileHelper);
+            generator.addProvider(true, blockTagProvider);
+            generator.addProvider(true, new ModItemTagProvider(output, event.getLookupProvider(), blockTagProvider, existingFileHelper));
+            generator.addProvider(true, new ModWorldGenProvider(output, event.getLookupProvider()));
         } catch (RuntimeException runtimeException) {
             ArcaneTechMod.logger.error("Failed to generate data",runtimeException);
         }
