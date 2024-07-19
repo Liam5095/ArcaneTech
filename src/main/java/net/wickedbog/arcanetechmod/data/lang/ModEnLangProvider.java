@@ -5,7 +5,6 @@ import net.minecraft.network.chat.Component;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.core.init.BlockInit;
-import net.wickedbog.arcanetechmod.core.init.CreativeModeTabInit;
 import net.wickedbog.arcanetechmod.core.init.ItemInit;
 
 public class ModEnLangProvider extends LanguageProvider {
@@ -18,6 +17,7 @@ public class ModEnLangProvider extends LanguageProvider {
         // Items
         addItem(ItemInit.EXAMPLE_ITEM, "Example Item");
         addItem(ItemInit.ARCANE_CRYSTAL, "Arcane Crystal");
+        addItem(ItemInit.RAW_ARCANE, "Raw Arcane");
 
         // Blocks
 

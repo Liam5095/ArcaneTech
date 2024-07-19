@@ -17,6 +17,7 @@ public class ModItemStateProvider extends ItemModelProvider {
     protected void registerModels() {
         item(ItemInit.EXAMPLE_ITEM.get());
         item(ItemInit.ARCANE_CRYSTAL.get());
+        item(ItemInit.RAW_ARCANE.get());
     }
 
     private void item(Item item) {

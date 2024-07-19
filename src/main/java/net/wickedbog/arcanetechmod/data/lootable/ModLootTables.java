@@ -21,16 +21,16 @@ public class ModLootTables extends LootTableProvider {
     }
 
     @Override
-    protected void validate(Map<ResourceLocation, LootTable> map, ValidationContext validationcontext) {
+    public void validate(Map<ResourceLocation, LootTable> map, ValidationContext validationContext) {
         var modLootTablesId = BuiltInLootTables.all()
                 .stream()
                 .filter(id -> id.getNamespace().equals(ArcaneTechMod.MOD_ID))
                 .collect(Collectors.toSet());
 
         for (var id : Sets.difference(modLootTablesId, map.keySet())) {
-            validationcontext.reportProblem("Missing mod loot table: " + id);
+            validationContext.reportProblem("Missing mod loot table: " + id);
         }
 
-        map.forEach((id, lootTable) -> lootTable.validate(validationcontext));
+        map.forEach((id, lootTable) -> lootTable.validate(validationContext));
     }
 }
