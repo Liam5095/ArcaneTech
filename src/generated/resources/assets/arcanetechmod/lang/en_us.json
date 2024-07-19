@@ -1,3 +1,6 @@
 {
+  "block.arcanetechmod.example_block": "Example Block",
+  "creativetab.arcanemod": "ArcaneTech Tab",
+  "item.arcanetechmod.arcane_crystal": "Arcane Crystal",
   "item.arcanetechmod.example_item": "Example Item"
 }

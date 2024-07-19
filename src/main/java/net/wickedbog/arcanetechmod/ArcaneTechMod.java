@@ -4,6 +4,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.wickedbog.arcanetechmod.core.init.BlockInit;
+import net.wickedbog.arcanetechmod.core.init.CreativeModeTabInit;
 import net.wickedbog.arcanetechmod.core.init.ItemInit;
 import net.wickedbog.arcanetechmod.data.DataGenerators;
 import org.slf4j.LoggerFactory;
@@ -18,6 +20,8 @@ public class ArcaneTechMod {
     public ArcaneTechMod(IEventBus bus) {
         // Registers
         ItemInit.ITEMS.register(bus);
+        BlockInit.BLOCKS.register(bus);
+        CreativeModeTabInit.CREATIVE_MODE_TABS.register(bus);
 
         // Listeners
         bus.addListener(DataGenerators::gatherData);

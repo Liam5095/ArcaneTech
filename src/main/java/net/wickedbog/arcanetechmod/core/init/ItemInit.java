@@ -9,4 +9,5 @@ public class ItemInit {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ArcaneTechMod.MOD_ID);
 
     public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ARCANE_CRYSTAL = ITEMS.register("arcane_crystal", () -> new Item(new Item.Properties()));
 }
