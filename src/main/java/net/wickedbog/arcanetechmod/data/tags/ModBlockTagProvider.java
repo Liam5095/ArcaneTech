@@ -25,9 +25,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(TagsInit.BlockTagsInit.ARCANE_ORE).add(BlockInit.ARCANE_ORE.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(BlockInit.ARCANE_ORE.get());
+                .add(BlockInit.ARCANE_ORE.get())
+                .add(BlockInit.DEEPSLATE_ARCANE_ORE.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(BlockInit.ARCANE_ORE.get());
+                .add(BlockInit.ARCANE_ORE.get())
+                .add(BlockInit.DEEPSLATE_ARCANE_ORE.get());
     }
 
     private static TagKey<Block> createForgeTag(String name) {

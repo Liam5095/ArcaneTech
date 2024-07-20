@@ -1,5 +1,8 @@
 {
+  "advancements.arcanetech.description": "You got raw arcane, good job!",
+  "advancements.arcanetech.title": "Arcane Tech",
   "block.arcanetechmod.arcane_ore": "Arcane Ore",
+  "block.arcanetechmod.deepslate_arcane_ore": "Deepslate Arcane Ore",
   "block.arcanetechmod.example_block": "Example Block",
   "creativetab.arcanemod": "ArcaneTech Tab",
   "item.arcanetechmod.arcane_crystal": "Arcane Crystal",

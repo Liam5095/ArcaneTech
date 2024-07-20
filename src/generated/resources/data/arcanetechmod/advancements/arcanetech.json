@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "inventory_changed": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arcanetechmod:raw_arcane"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "arcanetechmod:textures/block/arcane_ore.png",
+    "description": {
+      "translate": "advancements.arcanetech.description"
+    },
+    "icon": {
+      "item": "arcanetechmod:raw_arcane"
+    },
+    "title": {
+      "translate": "advancements.arcanetech.title"
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

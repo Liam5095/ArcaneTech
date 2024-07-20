@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.3,
+  "ingredient": {
+    "item": "arcanetechmod:arcane_ore"
+  },
+  "result": "arcanetechmod:arcane_crystal"
+}

@@ -1,3 +1,4 @@
-// 1.20.4	2024-07-19T10:28:25.4441377	Registries
-ef189363834d3b5668fc17f6cfc0287361f0a0c7 data/arcanetechmod/worldgen/configured_feature/arcane_ore.json
-c315bb0512eaded6cd0be224ad925c0536e2bb1b data/arcanetechmod/worldgen/placed_feature/arcane_ore.json
+// 1.20.4	2024-07-19T15:12:45.4901392	Registries
+8110e04215f6bad8a909deaf0591ae98bfcb99fe data/arcanetechmod/neoforge/biome_modifier/add_arcane_ore.json
+d60196fd1df02e095710a9d404f9679e56de7f09 data/arcanetechmod/worldgen/configured_feature/arcane_ore.json
+897c1386226c327995d73aeb4db74bf1df36f5ce data/arcanetechmod/worldgen/placed_feature/arcane_ore.json

@@ -7,6 +7,7 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.wickedbog.arcanetechmod.core.init.BlockInit;
 import net.wickedbog.arcanetechmod.core.init.CreativeModeTabInit;
 import net.wickedbog.arcanetechmod.core.init.ItemInit;
+import net.wickedbog.arcanetechmod.core.init.TagsInit;
 import net.wickedbog.arcanetechmod.data.DataGenerators;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;

@@ -1,3 +1,4 @@
-// 1.20.4	2024-07-19T09:33:42.6198602	Loot Tables
+// 1.20.4	2024-07-19T14:41:58.3807888	Loot Tables
 055b1f2f3e8af833ae8de9686fed70d578a78aeb data/arcanetechmod/loot_tables/blocks/arcane_ore.json
+f38dc70695b50f80a0ec85593d46cb873617dd8e data/arcanetechmod/loot_tables/blocks/deepslate_arcane_ore.json
 6d45e7533a94540ad814e59bccb486d8c4aef421 data/arcanetechmod/loot_tables/blocks/example_block.json

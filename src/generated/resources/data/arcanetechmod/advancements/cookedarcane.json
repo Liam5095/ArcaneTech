@@ -1,0 +1,35 @@
+{
+  "parent": "arcanetechmod:arcanetech",
+  "criteria": {
+    "inventory_changed": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arcanetechmod:arcane_crystal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "arcanetechmod:textures/block/arcane_ore.png",
+    "description": {
+      "translate": "advancements.cookedarcane.description"
+    },
+    "icon": {
+      "item": "arcanetechmod:arcane_crystal"
+    },
+    "title": {
+      "translate": "advancements.cookedarcane.title"
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

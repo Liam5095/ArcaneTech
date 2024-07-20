@@ -5,7 +5,9 @@ import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
+import net.wickedbog.arcanetechmod.worldgen.ModBiomesModifiers;
 import net.wickedbog.arcanetechmod.worldgen.ModConfiguredFeatures;
 import net.wickedbog.arcanetechmod.worldgen.ModPlacedFeatures;
 
@@ -17,7 +19,8 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
         super(output, registries,
                 new RegistrySetBuilder()
                         .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
-                        .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap),
+                        .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
+                        .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomesModifiers::bootstrap),
                 Set.of(ArcaneTechMod.MOD_ID));
     }
 }

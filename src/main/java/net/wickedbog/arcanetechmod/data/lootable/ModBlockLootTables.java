@@ -21,6 +21,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         add(BlockInit.ARCANE_ORE.get(), createOreDrop(BlockInit.ARCANE_ORE.get(), ItemInit.RAW_ARCANE.get()));
+        add(BlockInit.DEEPSLATE_ARCANE_ORE.get(), createOreDrop(BlockInit.DEEPSLATE_ARCANE_ORE.get(), ItemInit.RAW_ARCANE.get()));
 
         dropSelf(BlockInit.EXAMPLE_BLOCK.get());
     }

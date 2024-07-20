@@ -18,6 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         normalBlock(BlockInit.EXAMPLE_BLOCK.get());
         normalBlock(BlockInit.ARCANE_ORE.get());
+        normalBlock(BlockInit.DEEPSLATE_ARCANE_ORE.get());
     }
 
     protected void normalBlock(Block block) {

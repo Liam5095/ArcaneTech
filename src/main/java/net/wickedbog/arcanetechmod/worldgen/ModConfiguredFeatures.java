@@ -24,9 +24,10 @@ public class ModConfiguredFeatures {
         RuleTest stoneReplacable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacable = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
-        List<OreConfiguration.TargetBlockState> arcaneOre = List.of(OreConfiguration.target(stoneReplacable, BlockInit.ARCANE_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> arcaneOre = List.of(OreConfiguration.target(stoneReplacable, BlockInit.ARCANE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplacable, BlockInit.DEEPSLATE_ARCANE_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_ARCANE_ORE, Feature.ORE, new OreConfiguration(arcaneOre,3));
+        register(context, OVERWORLD_ARCANE_ORE, Feature.ORE, new OreConfiguration(arcaneOre,5));
     }
 
     private static ResourceKey<ConfiguredFeature<?, ?>> createKey(String name) {

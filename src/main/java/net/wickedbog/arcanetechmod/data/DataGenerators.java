@@ -2,9 +2,11 @@ package net.wickedbog.arcanetechmod.data;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.neoforged.neoforge.common.data.AdvancementProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
+import net.wickedbog.arcanetechmod.data.advancements.ModAdvancementsProvider;
 import net.wickedbog.arcanetechmod.data.lang.ModEnLangProvider;
 import net.wickedbog.arcanetechmod.data.lootable.ModLootTables;
 import net.wickedbog.arcanetechmod.data.recipes.MainModRecipeProvider;
@@ -13,6 +15,8 @@ import net.wickedbog.arcanetechmod.data.tags.ModItemTagProvider;
 import net.wickedbog.arcanetechmod.data.texture.ModBlockStateProvider;
 import net.wickedbog.arcanetechmod.data.texture.ModItemStateProvider;
 import net.wickedbog.arcanetechmod.data.world.ModWorldGenProvider;
+
+import java.util.List;
 
 public class DataGenerators {
 
@@ -31,6 +35,7 @@ public class DataGenerators {
             generator.addProvider(true, blockTagProvider);
             generator.addProvider(true, new ModItemTagProvider(output, event.getLookupProvider(), blockTagProvider, existingFileHelper));
             generator.addProvider(true, new ModWorldGenProvider(output, event.getLookupProvider()));
+            generator.addProvider(true, new AdvancementProvider(output, event.getLookupProvider(), existingFileHelper, List.of(new ModAdvancementsProvider())));
         } catch (RuntimeException runtimeException) {
             ArcaneTechMod.logger.error("Failed to generate data",runtimeException);
         }
