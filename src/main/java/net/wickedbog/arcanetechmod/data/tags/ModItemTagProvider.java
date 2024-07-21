@@ -3,11 +3,9 @@ package net.wickedbog.arcanetechmod.data.tags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
-import net.wickedbog.arcanetechmod.core.init.BlockInit;
 import net.wickedbog.arcanetechmod.core.init.TagsInit;
 
 import javax.annotation.Nullable;

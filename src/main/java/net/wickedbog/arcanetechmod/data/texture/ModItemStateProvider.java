@@ -5,7 +5,7 @@ import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
-import net.wickedbog.arcanetechmod.core.init.ItemInit;
+import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 import net.wickedbog.arcanetechmod.util.NameUtility;
 
 public class ModItemStateProvider extends ItemModelProvider {

@@ -5,8 +5,8 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
-import net.wickedbog.arcanetechmod.core.init.BlockInit;
-import net.wickedbog.arcanetechmod.core.init.ItemInit;
+import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
+import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
@@ -24,6 +24,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         add(BlockInit.DEEPSLATE_ARCANE_ORE.get(), createOreDrop(BlockInit.DEEPSLATE_ARCANE_ORE.get(), ItemInit.RAW_ARCANE.get()));
 
         dropSelf(BlockInit.EXAMPLE_BLOCK.get());
+        //dropSelf(BlockInit.ARCANE_GATEWAY.get());
     }
 
     @Override

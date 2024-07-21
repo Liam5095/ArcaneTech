@@ -1,6 +1,9 @@
 {
   "advancements.arcanetech.description": "You got raw arcane, good job!",
   "advancements.arcanetech.title": "Arcane Tech",
+  "advancements.cookedarcane.description": "Now what can i do with this?",
+  "advancements.cookedarcane.title": "Cooking Master",
+  "block.arcanetechmod.arcane_gateway": "Arcane Gateway",
   "block.arcanetechmod.arcane_ore": "Arcane Ore",
   "block.arcanetechmod.deepslate_arcane_ore": "Deepslate Arcane Ore",
   "block.arcanetechmod.example_block": "Example Block",

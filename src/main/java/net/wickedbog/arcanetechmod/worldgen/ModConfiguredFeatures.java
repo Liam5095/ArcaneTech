@@ -12,7 +12,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
-import net.wickedbog.arcanetechmod.core.init.BlockInit;
+import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
 
 import java.util.List;
 

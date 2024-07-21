@@ -7,7 +7,7 @@ import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
-import net.wickedbog.arcanetechmod.core.init.BlockInit;
+import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -19,6 +19,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         normalBlock(BlockInit.EXAMPLE_BLOCK.get());
         normalBlock(BlockInit.ARCANE_ORE.get());
         normalBlock(BlockInit.DEEPSLATE_ARCANE_ORE.get());
+        normalBlock(BlockInit.ARCANE_GATEWAY.get());
     }
 
     protected void normalBlock(Block block) {

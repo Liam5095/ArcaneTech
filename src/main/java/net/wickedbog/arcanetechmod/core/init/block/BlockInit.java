@@ -1,4 +1,4 @@
-package net.wickedbog.arcanetechmod.core.init;
+package net.wickedbog.arcanetechmod.core.init.block;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
@@ -13,16 +13,24 @@ import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
+import net.wickedbog.arcanetechmod.core.init.block.custom.ArcaneGatewayBlock;
+import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 
 import java.util.function.Supplier;
 
 public class BlockInit {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ArcaneTechMod.MOD_ID);
 
-    public static final DeferredBlock<Block> EXAMPLE_BLOCK = registerBlock("example_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COAL_ORE)));
+    public static final DeferredBlock<Block> EXAMPLE_BLOCK = registerBlock("example_block", () -> new
+            Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COAL_ORE)));
 
-    public static final DeferredBlock<Block> ARCANE_ORE = registerBlock("arcane_ore", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
-    public static final DeferredBlock<Block> DEEPSLATE_ARCANE_ORE = registerBlock("deepslate_arcane_ore", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)));
+    public static final DeferredBlock<Block> ARCANE_ORE = registerBlock("arcane_ore", () -> new
+            Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
+    public static final DeferredBlock<Block> DEEPSLATE_ARCANE_ORE = registerBlock("deepslate_arcane_ore", () -> new
+            Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)));
+
+    public static final DeferredBlock<Block> ARCANE_GATEWAY = registerBlock("arcane_gateway", () -> new
+            ArcaneGatewayBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_PORTAL).noLootTable().noOcclusion().noCollission()));
 
     //public static final DeferredBlock<Block> ARCANE_LOG = registerBlock("arcane_log", () -> log(MapColor.WOOD, MapColor.PODZOL));
 

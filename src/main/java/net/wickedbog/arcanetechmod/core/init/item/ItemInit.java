@@ -1,4 +1,4 @@
-package net.wickedbog.arcanetechmod.core.init;
+package net.wickedbog.arcanetechmod.core.init.item;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;

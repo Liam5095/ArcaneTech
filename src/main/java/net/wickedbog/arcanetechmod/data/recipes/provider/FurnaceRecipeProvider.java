@@ -5,8 +5,8 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.wickedbog.arcanetechmod.core.init.BlockInit;
-import net.wickedbog.arcanetechmod.core.init.ItemInit;
+import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
+import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 import net.wickedbog.arcanetechmod.data.recipes.MainModRecipeProvider;
 
 public class FurnaceRecipeProvider extends MainModRecipeProvider {

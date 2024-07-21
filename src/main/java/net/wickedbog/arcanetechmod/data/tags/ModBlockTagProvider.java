@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
-import net.wickedbog.arcanetechmod.core.init.BlockInit;
+import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
 import net.wickedbog.arcanetechmod.core.init.TagsInit;
 import org.jetbrains.annotations.Nullable;
 
