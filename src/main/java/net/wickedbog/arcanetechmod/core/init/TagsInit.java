@@ -1,10 +1,13 @@
 package net.wickedbog.arcanetechmod.core.init;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
 
@@ -27,6 +30,14 @@ public class TagsInit {
 
         private static ResourceLocation createResourceLocation(String name) {
             return new ResourceLocation("forge", name);
+        }
+    }
+
+    public static class BiomeTagsInit {
+        public static TagKey<Biome> IS_MYTHICAL_REALM = createBiomeTag("is_mythical_realm");
+
+        private static TagKey<Biome> createBiomeTag(String pName) {
+            return TagKey.create(Registries.BIOME, new ResourceLocation(pName));
         }
     }
 }

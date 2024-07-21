@@ -1,5 +1,6 @@
 package net.wickedbog.arcanetechmod.worldgen.dimension;
 
+
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
@@ -9,7 +10,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.biome.*;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.biome.Climate;
+import net.minecraft.world.level.biome.MultiNoiseBiomeSource;
 import net.minecraft.world.level.dimension.BuiltinDimensionTypes;
 import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.dimension.LevelStem;
@@ -44,7 +48,7 @@ public class ModDimensions {
                 BlockTags.INFINIBURN_OVERWORLD, // infiniburn
                 BuiltinDimensionTypes.OVERWORLD_EFFECTS, // effectsLocation
                 1.0f, // ambientLight
-                new DimensionType.MonsterSettings(false, false, ConstantInt.of(0), 0)
+                new DimensionType.MonsterSettings(true, false, ConstantInt.of(0), 0)
         ));
     }
 

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "arcanetechmod:block/arcane_gateway"
-  }
-}

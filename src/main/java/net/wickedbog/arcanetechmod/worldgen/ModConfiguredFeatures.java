@@ -18,7 +18,7 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
 
-    protected static ResourceKey<ConfiguredFeature<?,?>> OVERWORLD_ARCANE_ORE = createKey("arcane_ore");
+    protected static ResourceKey<ConfiguredFeature<?,?>> MYTHICAL_REALM_ARCANE_ORE = createKey("arcane_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context) {
         RuleTest stoneReplacable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -27,7 +27,7 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> arcaneOre = List.of(OreConfiguration.target(stoneReplacable, BlockInit.ARCANE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplacable, BlockInit.DEEPSLATE_ARCANE_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_ARCANE_ORE, Feature.ORE, new OreConfiguration(arcaneOre,5));
+        register(context, MYTHICAL_REALM_ARCANE_ORE, Feature.ORE, new OreConfiguration(arcaneOre,5));
     }
 
     private static ResourceKey<ConfiguredFeature<?, ?>> createKey(String name) {

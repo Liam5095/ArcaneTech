@@ -8,8 +8,10 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.data.advancements.ModAdvancementsProvider;
 import net.wickedbog.arcanetechmod.data.lang.ModEnLangProvider;
+import net.wickedbog.arcanetechmod.data.lang.ModNlLangProvider;
 import net.wickedbog.arcanetechmod.data.lootable.ModLootTables;
 import net.wickedbog.arcanetechmod.data.recipes.MainModRecipeProvider;
+import net.wickedbog.arcanetechmod.data.tags.ModBiomeTagProvider;
 import net.wickedbog.arcanetechmod.data.tags.ModBlockTagProvider;
 import net.wickedbog.arcanetechmod.data.tags.ModItemTagProvider;
 import net.wickedbog.arcanetechmod.data.texture.ModBlockStateProvider;
@@ -27,6 +29,7 @@ public class DataGenerators {
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
             generator.addProvider(true, new ModEnLangProvider(output));
+            generator.addProvider(true, new ModNlLangProvider(output));
             generator.addProvider(true, new ModItemStateProvider(output, existingFileHelper));
             generator.addProvider(true, new ModBlockStateProvider(output, existingFileHelper));
             generator.addProvider(true, new ModLootTables(output));
@@ -34,6 +37,7 @@ public class DataGenerators {
             ModBlockTagProvider blockTagProvider = new ModBlockTagProvider(output, event.getLookupProvider(), existingFileHelper);
             generator.addProvider(true, blockTagProvider);
             generator.addProvider(true, new ModItemTagProvider(output, event.getLookupProvider(), blockTagProvider, existingFileHelper));
+            generator.addProvider(true, new ModBiomeTagProvider(output, event.getLookupProvider(), existingFileHelper));
             generator.addProvider(true, new ModWorldGenProvider(output, event.getLookupProvider()));
             generator.addProvider(true, new AdvancementProvider(output, event.getLookupProvider(), existingFileHelper, List.of(new ModAdvancementsProvider())));
         } catch (RuntimeException runtimeException) {

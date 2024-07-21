@@ -32,7 +32,7 @@ public class ModNlLangProvider extends LanguageProvider {
         add("advancements.cookedarcane.title", "Prof Chef!");
 
         // Advancement Descriptions
-        add("advancements.arcanetech.description", "Je hebt rauw arcane, goed gedaan!");
+        add("advancements.arcanetech.description", "Je hebt rauwe arcane, goed gedaan!");
         add("advancements.cookedarcane.description", "Wat kan ik hiermee doen?");
     }
 

@@ -1,0 +1,14 @@
+{
+  "advancements.arcanetech.description": "Je hebt rauwe arcane, goed gedaan!",
+  "advancements.arcanetech.title": "Arcane Tech",
+  "advancements.cookedarcane.description": "Wat kan ik hiermee doen?",
+  "advancements.cookedarcane.title": "Prof Chef!",
+  "block.arcanetechmod.arcane_gateway": "Arcane Poort",
+  "block.arcanetechmod.arcane_ore": "Arcanerts",
+  "block.arcanetechmod.deepslate_arcane_ore": "Wrevelsteenarcanerts",
+  "block.arcanetechmod.example_block": "Voorbeeld Blok",
+  "creativetab.arcanemod": "ArcaneTech Tabblad",
+  "item.arcanetechmod.arcane_crystal": "Arcane Krystal",
+  "item.arcanetechmod.example_item": "Voorbeeld Item",
+  "item.arcanetechmod.raw_arcane": "Rauwe Arcane"
+}

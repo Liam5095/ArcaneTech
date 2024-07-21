@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "#minecraft:is_overworld",
+  "biomes": "#minecraft:is_mythical_realm",
   "features": "arcanetechmod:arcane_ore",
   "step": "underground_ores"
 }

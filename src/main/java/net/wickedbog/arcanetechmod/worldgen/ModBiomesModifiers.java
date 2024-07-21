@@ -14,6 +14,7 @@ import net.neoforged.neoforge.common.world.BiomeModifier;
 import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
+import net.wickedbog.arcanetechmod.core.init.TagsInit;
 
 public class ModBiomesModifiers {
     protected static ResourceKey<BiomeModifier> ADD_ARCANE_ORE = registerKey("add_arcane_ore");
@@ -25,7 +26,7 @@ public class ModBiomesModifiers {
         context.register(
                 ADD_ARCANE_ORE,
                 new BiomeModifiers.AddFeaturesBiomeModifier(
-                    biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                    biomes.getOrThrow(TagsInit.BiomeTagsInit.IS_MYTHICAL_REALM),
                         HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ARCANE_ORE)),
                         GenerationStep.Decoration.UNDERGROUND_ORES));
     }

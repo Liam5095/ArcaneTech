@@ -1,6 +1,6 @@
-// 1.20.4	2024-07-21T09:57:57.1604369	Registries
+// 1.20.4	2024-07-21T20:26:58.9968589	Registries
 569b5223749cb0ba9ce7716cc59e2844b36b8e29 data/arcanetechmod/dimension/mythical_realm.json
-e241e971aacde6f4d0236c622c99d6c9caeb981e data/arcanetechmod/dimension_type/mythical_realm_type.json
-8110e04215f6bad8a909deaf0591ae98bfcb99fe data/arcanetechmod/neoforge/biome_modifier/add_arcane_ore.json
+5881c81e8ad0b24d8a78283d9065898850023671 data/arcanetechmod/dimension_type/mythical_realm_type.json
+4faea5379a02c7212246f92be597f8c75ebaa300 data/arcanetechmod/neoforge/biome_modifier/add_arcane_ore.json
 d60196fd1df02e095710a9d404f9679e56de7f09 data/arcanetechmod/worldgen/configured_feature/arcane_ore.json
 897c1386226c327995d73aeb4db74bf1df36f5ce data/arcanetechmod/worldgen/placed_feature/arcane_ore.json

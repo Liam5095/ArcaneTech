@@ -22,7 +22,7 @@ public class ModPlacedFeatures {
         HolderGetter<ConfiguredFeature<?,?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         Holder<ConfiguredFeature<?,? >> holder =
-                configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ARCANE_ORE);
+                configuredFeatures.getOrThrow(ModConfiguredFeatures.MYTHICAL_REALM_ARCANE_ORE);
 
         // 3 veins per chunk, between y -64 and 50
         register(context, ARCANE_ORE, holder, ModOrePlacement.commonOrePlacements(3, HeightRangePlacement.uniform(VerticalAnchor.absolute(-25), VerticalAnchor.absolute(20))));
