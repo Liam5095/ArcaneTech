@@ -18,6 +18,8 @@ public class ModEnLangProvider extends LanguageProvider {
         addItem(ItemInit.EXAMPLE_ITEM, "Example Item");
         addItem(ItemInit.ARCANE_CRYSTAL, "Arcane Crystal");
         addItem(ItemInit.RAW_ARCANE, "Raw Arcane");
+        addItem(ItemInit.RAW_RUNIC, "Raw Runic");
+        addItem(ItemInit.RUNIC_INGOT, "Runic Ingot");
 
         // Blocks
 
@@ -26,6 +28,7 @@ public class ModEnLangProvider extends LanguageProvider {
         addBlock(BlockInit.DEEPSLATE_ARCANE_ORE, "Deepslate Arcane Ore");
         addBlock(BlockInit.ARCANE_GATEWAY, "Arcane Gateway");
         addBlock(BlockInit.RUNIC_ORE, "Runic Ore");
+        addBlock(BlockInit.DEEPSLATE_RUNIC_ORE, "Deepslate Runic Ore");
 
         // Others
         add("creativetab.arcanemod", "ArcaneTech Tab");

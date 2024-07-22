@@ -28,33 +28,35 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(BlockInit.ARCANE_ORE.get())
                 .add(BlockInit.DEEPSLATE_ARCANE_ORE.get());
 
-        tag(TagsInit.BlockTagsInit.CUSTOM_ORES)
+        tag(TagsInit.BlockTagsInit.RUNIC_ORE)
                 .add(BlockInit.RUNIC_ORE.get())
-                .add(BlockInit.ARCANE_ORE.get())
-                .add(BlockInit.DEEPSLATE_ARCANE_ORE.get());
+                .add(BlockInit.DEEPSLATE_RUNIC_ORE.get());
 
-        tag(Tags.Blocks.ORES)
-                .add(BlockInit.RUNIC_ORE.get())
-                .add(BlockInit.ARCANE_ORE.get())
-                .add(BlockInit.DEEPSLATE_ARCANE_ORE.get());
+        tag(TagsInit.BlockTagsInit.CUSTOM_ORES)
+                .addTag(TagsInit.BlockTagsInit.RUNIC_ORE)
+                .addTag(TagsInit.BlockTagsInit.ARCANE_ORE);
+
+        tag(TagsInit.BlockTagsInit.ALL_ORES)
+                .addTag(TagsInit.BlockTagsInit.CUSTOM_ORES)
+                .addTag(Tags.Blocks.ORES);
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(BlockInit.ARCANE_ORE.get())
-                .add(BlockInit.DEEPSLATE_ARCANE_ORE.get())
-                .add(BlockInit.RUNIC_ORE.get())
-                .add(BlockInit.ARCANE_GATEWAY.get());
+                .addTag(TagsInit.BlockTagsInit.CUSTOM_ORES);
+
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(BlockInit.ARCANE_GATEWAY.get());
+
         tag(BlockTags.SWORD_EFFICIENT); // I THINK
         tag(BlockTags.MINEABLE_WITH_HOE);
         tag(BlockTags.MINEABLE_WITH_SHOVEL);
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(BlockInit.ARCANE_ORE.get())
-                .add(BlockInit.DEEPSLATE_ARCANE_ORE.get())
-                .add(BlockInit.RUNIC_ORE.get());
+                .addTag(TagsInit.BlockTagsInit.ARCANE_ORE)
+                .addTag(TagsInit.BlockTagsInit.RUNIC_ORE);
+
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(BlockInit.ARCANE_GATEWAY.get());
+
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
         tag(Tags.Blocks.NEEDS_GOLD_TOOL);
         tag(Tags.Blocks.NEEDS_WOOD_TOOL);

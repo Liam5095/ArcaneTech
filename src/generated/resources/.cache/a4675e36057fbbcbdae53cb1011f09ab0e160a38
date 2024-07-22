@@ -1,13 +1,16 @@
-// 1.20.4	2024-07-22T18:55:59.4907908	Block States: arcanetechmod
+// 1.20.4	2024-07-22T19:36:16.4654457	Block States: arcanetechmod
 8bf85e4cfa83e69efcc2a9fb57afaec5c92c6aa9 assets/arcanetechmod/blockstates/arcane_ore.json
 afb28dc72d028f32b4b0ec8ae2b21f1b18ee597f assets/arcanetechmod/blockstates/deepslate_arcane_ore.json
+396b14bfb5539bfe1233abfeffd797f7a9560326 assets/arcanetechmod/blockstates/deepslate_runic_ore.json
 293470f13ffbc9beff528b682e2930f44d690525 assets/arcanetechmod/blockstates/example_block.json
 8189cd37586c4858ec9be45cfd7462541dab0d1c assets/arcanetechmod/blockstates/runic_ore.json
 162d64333641a8ba66dc28000e48613a6c8fec21 assets/arcanetechmod/models/block/arcane_ore.json
 b52a9967ce607816317542cdef632e7c124a06bd assets/arcanetechmod/models/block/deepslate_arcane_ore.json
+2b661488e1c4396c1aad94e75b42de262f1fcf41 assets/arcanetechmod/models/block/deepslate_runic_ore.json
 74d5d68bdbaed5ce3695c0b79583f24b125531f8 assets/arcanetechmod/models/block/example_block.json
 1fcdc553308367fe268317890cf1210d020a2678 assets/arcanetechmod/models/block/runic_ore.json
 2f1b6cdbd8a6d2e7a7a9957b8efe49c5d8259b0d assets/arcanetechmod/models/item/arcane_ore.json
 ab217ea658dd9152ac12fc2f21e7c7d85224ce29 assets/arcanetechmod/models/item/deepslate_arcane_ore.json
+b001028f32a95d0568fab00853a689394c64bd9e assets/arcanetechmod/models/item/deepslate_runic_ore.json
 525e275830b68679f1f93c81b026dbf62681b269 assets/arcanetechmod/models/item/example_block.json
 72909ed56f6cc093ec7baae6891830eba055e761 assets/arcanetechmod/models/item/runic_ore.json

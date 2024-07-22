@@ -25,7 +25,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         add(BlockInit.DEEPSLATE_ARCANE_ORE.get(), createOreDrop(BlockInit.DEEPSLATE_ARCANE_ORE.get(), ItemInit.RAW_ARCANE.get()));
 
         // Runic
-        add(BlockInit.RUNIC_ORE.get(), createOreDrop(BlockInit.RUNIC_ORE.get(), ItemInit.EXAMPLE_ITEM.get()));
+        add(BlockInit.RUNIC_ORE.get(), createOreDrop(BlockInit.RUNIC_ORE.get(), ItemInit.RAW_RUNIC.get()));
+        add(BlockInit.DEEPSLATE_RUNIC_ORE.get(), createOreDrop(BlockInit.DEEPSLATE_RUNIC_ORE.get(), ItemInit.RAW_RUNIC.get()));
 
         // DropSelf
 

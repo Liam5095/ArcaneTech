@@ -2,7 +2,6 @@ package net.wickedbog.arcanetechmod.core.init;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -15,7 +14,9 @@ public class TagsInit {
 
     public static class BlockTagsInit {
         public static TagKey<Block> ARCANE_ORE = BlockTags.create(createResourceLocation("ores/arcane_ore"));
+        public static TagKey<Block> RUNIC_ORE = BlockTags.create(createResourceLocation("ores/runic_ore"));
         public static TagKey<Block> CUSTOM_ORES = BlockTags.create(createResourceLocation("custom_ores"));
+        public static TagKey<Block> ALL_ORES = BlockTags.create(createResourceLocation("all_ores"));
 
         private static ResourceLocation createResourceLocation(String name) {
             return new ResourceLocation("forge", name);

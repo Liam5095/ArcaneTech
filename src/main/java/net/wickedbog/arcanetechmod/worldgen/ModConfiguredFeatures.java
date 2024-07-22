@@ -27,7 +27,8 @@ public class ModConfiguredFeatures {
 
         List<OreConfiguration.TargetBlockState> arcaneOre = List.of(OreConfiguration.target(stoneReplacable, BlockInit.ARCANE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplacable, BlockInit.DEEPSLATE_ARCANE_ORE.get().defaultBlockState()));
-        List<OreConfiguration.TargetBlockState> runicOre = List.of(OreConfiguration.target(stoneReplacable, BlockInit.RUNIC_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> runicOre = List.of(OreConfiguration.target(stoneReplacable, BlockInit.RUNIC_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplacable, BlockInit.DEEPSLATE_RUNIC_ORE.get().defaultBlockState()));
 
         register(context, MYTHICAL_REALM_ARCANE_ORE, Feature.ORE, new OreConfiguration(arcaneOre,4));
         register(context, OVERWORLD_RUNIC_ORE, Feature.ORE, new OreConfiguration(runicOre,6));

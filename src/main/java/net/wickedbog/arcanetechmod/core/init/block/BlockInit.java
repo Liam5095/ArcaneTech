@@ -27,6 +27,8 @@ public class BlockInit {
 
     public static final DeferredBlock<Block> RUNIC_ORE = registerBlock("runic_ore", () -> new
             RunicOreBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
+    public static final DeferredBlock<Block> DEEPSLATE_RUNIC_ORE = registerBlock("deepslate_runic_ore", () -> new
+            RunicOreBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)));
 
     public static final DeferredBlock<Block> ARCANE_ORE = registerBlock("arcane_ore", () -> new
             Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
