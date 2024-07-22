@@ -18,6 +18,8 @@ public class ModItemStateProvider extends ItemModelProvider {
         item(ItemInit.EXAMPLE_ITEM.get());
         item(ItemInit.ARCANE_CRYSTAL.get());
         item(ItemInit.RAW_ARCANE.get());
+        item(ItemInit.RAW_RUNIC.get());
+        item(ItemInit.RUNIC_INGOT.get());
     }
 
     private void item(Item item) {

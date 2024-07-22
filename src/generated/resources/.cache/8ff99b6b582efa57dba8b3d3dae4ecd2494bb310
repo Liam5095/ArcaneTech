@@ -1,4 +1,14 @@
-// 1.20.4	2024-07-19T14:41:58.3802632	Tags for minecraft:block mod id arcanetechmod
-bc3f6bd5011e5baa3c553e2ae22cc5b18ae2ac4a data/forge/tags/blocks/ores/arcane_ore.json
-6c002a3a67c1cb9079bfb2963633130e16b45939 data/minecraft/tags/blocks/mineable/pickaxe.json
-6c002a3a67c1cb9079bfb2963633130e16b45939 data/minecraft/tags/blocks/needs_iron_tool.json
+// 1.20.4	2024-07-22T19:04:38.6974103	Tags for minecraft:block mod id arcanetechmod
+220a11da8741dbd6fe14e7f7f1ec516f13b98a34 data/forge/tags/blocks/custom_ores.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_gold_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_wood_tool.json
+220a11da8741dbd6fe14e7f7f1ec516f13b98a34 data/forge/tags/blocks/ores.json
+6c002a3a67c1cb9079bfb2963633130e16b45939 data/forge/tags/blocks/ores/arcane_ore.json
+071efc333b60c7ee44275232676138470f281c4c data/minecraft/tags/blocks/mineable/axe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
+8f6d7d1615719eba0ff0b3af3e64b5c735b898ac data/minecraft/tags/blocks/mineable/pickaxe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
+9a8d8002e2e72a68f80ee7e122b875b6bbc2ae5a data/minecraft/tags/blocks/needs_iron_tool.json
+071efc333b60c7ee44275232676138470f281c4c data/minecraft/tags/blocks/needs_stone_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/sword_efficient.json

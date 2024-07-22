@@ -12,4 +12,7 @@ public class ItemInit {
 
     public static final DeferredItem<Item> RAW_ARCANE = ITEMS.register("raw_arcane", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ARCANE_CRYSTAL = ITEMS.register("arcane_crystal", () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> RAW_RUNIC = ITEMS.register("raw_runic", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RUNIC_INGOT = ITEMS.register("runic_ingot", () -> new Item(new Item.Properties()));
 }

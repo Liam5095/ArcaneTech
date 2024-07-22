@@ -15,6 +15,7 @@ public class TagsInit {
 
     public static class BlockTagsInit {
         public static TagKey<Block> ARCANE_ORE = BlockTags.create(createResourceLocation("ores/arcane_ore"));
+        public static TagKey<Block> CUSTOM_ORES = BlockTags.create(createResourceLocation("custom_ores"));
 
         private static ResourceLocation createResourceLocation(String name) {
             return new ResourceLocation("forge", name);

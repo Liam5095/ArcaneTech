@@ -1,4 +1,6 @@
-// 1.20.4	2024-07-19T08:53:15.6927085	Item Models: arcanetechmod
+// 1.20.4	2024-07-22T19:03:59.4395678	Item Models: arcanetechmod
 5142b9aa1f159641e33959de3229928c8c9f7a8b assets/arcanetechmod/models/item/arcane_crystal.json
 8b17eb4f319752f243cbb4ba195e1efa1d33a269 assets/arcanetechmod/models/item/example_item.json
 24a6ce41e9849d82ae82a477e6a2ed321e3d06ef assets/arcanetechmod/models/item/raw_arcane.json
+8b2815785d3e40eec6d287264b2aa8a0ed7e4551 assets/arcanetechmod/models/item/raw_runic.json
+a07a90c9644c182bde57ad0f8a594936753f758c assets/arcanetechmod/models/item/runic_ingot.json

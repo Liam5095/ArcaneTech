@@ -20,11 +20,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        // Arcane
         add(BlockInit.ARCANE_ORE.get(), createOreDrop(BlockInit.ARCANE_ORE.get(), ItemInit.RAW_ARCANE.get()));
         add(BlockInit.DEEPSLATE_ARCANE_ORE.get(), createOreDrop(BlockInit.DEEPSLATE_ARCANE_ORE.get(), ItemInit.RAW_ARCANE.get()));
 
+        // Runic
+        add(BlockInit.RUNIC_ORE.get(), createOreDrop(BlockInit.RUNIC_ORE.get(), ItemInit.EXAMPLE_ITEM.get()));
+
+        // DropSelf
+
         dropSelf(BlockInit.EXAMPLE_BLOCK.get());
-        //dropSelf(BlockInit.ARCANE_GATEWAY.get());
+        dropSelf(BlockInit.ARCANE_GATEWAY.get());
     }
 
     @Override

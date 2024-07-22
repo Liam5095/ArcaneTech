@@ -19,6 +19,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         normalBlock(BlockInit.EXAMPLE_BLOCK.get());
         normalBlock(BlockInit.ARCANE_ORE.get());
         normalBlock(BlockInit.DEEPSLATE_ARCANE_ORE.get());
+        normalBlock(BlockInit.RUNIC_ORE.get());
         //normalBlock(BlockInit.ARCANE_GATEWAY.get());
     }
 

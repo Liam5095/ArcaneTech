@@ -25,6 +25,7 @@ public class ModEnLangProvider extends LanguageProvider {
         addBlock(BlockInit.ARCANE_ORE, "Arcane Ore");
         addBlock(BlockInit.DEEPSLATE_ARCANE_ORE, "Deepslate Arcane Ore");
         addBlock(BlockInit.ARCANE_GATEWAY, "Arcane Gateway");
+        addBlock(BlockInit.RUNIC_ORE, "Runic Ore");
 
         // Others
         add("creativetab.arcanemod", "ArcaneTech Tab");

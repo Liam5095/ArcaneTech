@@ -1,6 +1,10 @@
-// 1.20.4	2024-07-21T20:26:58.9968589	Registries
-569b5223749cb0ba9ce7716cc59e2844b36b8e29 data/arcanetechmod/dimension/mythical_realm.json
+// 1.20.4	2024-07-22T19:03:59.4431171	Registries
+2a4a42b1bbfa4ae515614743fbff54d81024e003 data/arcanetechmod/dimension/mythical_realm.json
 5881c81e8ad0b24d8a78283d9065898850023671 data/arcanetechmod/dimension_type/mythical_realm_type.json
 4faea5379a02c7212246f92be597f8c75ebaa300 data/arcanetechmod/neoforge/biome_modifier/add_arcane_ore.json
-d60196fd1df02e095710a9d404f9679e56de7f09 data/arcanetechmod/worldgen/configured_feature/arcane_ore.json
+67e356832dfd90941b7da5fe2fba5ccddaa38ec4 data/arcanetechmod/neoforge/biome_modifier/add_runic_ore.json
+773d57fb28b8157f07aee395f1caec29e09cd0e2 data/arcanetechmod/worldgen/biome/enchaned_forest.json
+bfd3f2ea272f00dd64f4c6d71b32ce52da6f3709 data/arcanetechmod/worldgen/configured_feature/arcane_ore.json
+3e2ed5ea988d7251c9d4fae7f7efa2e5eb498c6f data/arcanetechmod/worldgen/configured_feature/runic_ore.json
 897c1386226c327995d73aeb4db74bf1df36f5ce data/arcanetechmod/worldgen/placed_feature/arcane_ore.json
+025a15c84f656e5f28917097c1a2187c3466908a data/arcanetechmod/worldgen/placed_feature/runic_ore.json

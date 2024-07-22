@@ -10,6 +10,7 @@ import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.worldgen.ModBiomesModifiers;
 import net.wickedbog.arcanetechmod.worldgen.ModConfiguredFeatures;
 import net.wickedbog.arcanetechmod.worldgen.ModPlacedFeatures;
+import net.wickedbog.arcanetechmod.worldgen.biome.ModBiomes;
 import net.wickedbog.arcanetechmod.worldgen.dimension.ModDimensions;
 
 import java.util.Set;
@@ -23,7 +24,8 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
                         .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
                         .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomesModifiers::bootstrap)
                         .add(Registries.LEVEL_STEM, ModDimensions::bootstrapStem)
-                        .add(Registries.DIMENSION_TYPE, ModDimensions::bootstrapType),
+                        .add(Registries.DIMENSION_TYPE, ModDimensions::bootstrapType)
+                        .add(Registries.BIOME, ModBiomes::bootstrap),
                 Set.of(ArcaneTechMod.MOD_ID));
     }
 }
