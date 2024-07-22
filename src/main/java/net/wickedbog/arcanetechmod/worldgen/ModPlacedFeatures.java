@@ -25,7 +25,7 @@ public class ModPlacedFeatures {
         Holder<ConfiguredFeature<?,? >> holder =
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.MYTHICAL_REALM_ARCANE_ORE);
         Holder<ConfiguredFeature<?,? >> holder1 =
-                configuredFeatures.getOrThrow(ModConfiguredFeatures.RUNIC_ORE);
+                configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUNIC_ORE);
 
 
         // 3 veins per chunk, between y -64 and 50

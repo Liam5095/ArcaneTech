@@ -43,7 +43,7 @@ public class ModDimensions {
                 1.0, // coordinateScale
                 true, // bedWorks
                 false, // respawnAnchorWorks
-                0, // minY
+                -32, // minY
                 256, // height
                 256, // logicalHeight
                 BlockTags.INFINIBURN_OVERWORLD, // infiniburn
@@ -65,7 +65,7 @@ public class ModDimensions {
                                 Pair.of(Climate.parameters(0.3F, 0.6F, 0.1F, 0.1F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.OCEAN)),
                                 Pair.of(Climate.parameters(0.4F, 0.3F, 0.2F, 0.1F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.DARK_FOREST))
                         ))),
-                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.NETHER));
+                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.OVERWORLD));
 
 
         LevelStem stem = new LevelStem(dimTypes.getOrThrow(ModDimensions.MYTHICAL_REALM_TYPE), noiseBasedChunkGenerator);
