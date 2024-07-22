@@ -14,5 +14,6 @@
   "item.arcanetechmod.example_item": "Example Item",
   "item.arcanetechmod.raw_arcane": "Raw Arcane",
   "item.arcanetechmod.raw_runic": "Raw Runic",
-  "item.arcanetechmod.runic_ingot": "Runic Ingot"
+  "item.arcanetechmod.runic_ingot": "Runic Ingot",
+  "item.arcanetechmod.runic_plate": "Runic Plate"
 }

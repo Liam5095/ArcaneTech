@@ -20,6 +20,7 @@ public class ModEnLangProvider extends LanguageProvider {
         addItem(ItemInit.RAW_ARCANE, "Raw Arcane");
         addItem(ItemInit.RAW_RUNIC, "Raw Runic");
         addItem(ItemInit.RUNIC_INGOT, "Runic Ingot");
+        addItem(ItemInit.RUNIC_PLATE, "Runic Plate");
 
         // Blocks
 
