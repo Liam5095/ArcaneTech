@@ -14,6 +14,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.core.init.block.custom.ArcaneGatewayBlock;
+import net.wickedbog.arcanetechmod.core.init.block.custom.MythicEssenceOreBlock;
 import net.wickedbog.arcanetechmod.core.init.block.custom.RunicOreBlock;
 import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 
@@ -22,13 +23,28 @@ import java.util.function.Supplier;
 public class BlockInit {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ArcaneTechMod.MOD_ID);
 
+    // DEBUG / TESTING STUFF
+
     public static final DeferredBlock<Block> EXAMPLE_BLOCK = registerBlock("example_block", () -> new
             Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COAL_ORE)));
+
+    // RUNIC STUFF
 
     public static final DeferredBlock<Block> RUNIC_ORE = registerBlock("runic_ore", () -> new
             RunicOreBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
     public static final DeferredBlock<Block> DEEPSLATE_RUNIC_ORE = registerBlock("deepslate_runic_ore", () -> new
             RunicOreBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)));
+
+    // MYTHIC ESSENCE STUFF
+
+    public static final DeferredBlock<Block> MYTHIC_ESSENCE_ORE = registerBlock("mythic_essence_ore", () -> new
+            MythicEssenceOreBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
+    public static final DeferredBlock<Block> DEEPSLATE_MYTHIC_ESSENCE_ORE = registerBlock("deepslate_mythic_essence_ore", () -> new
+            MythicEssenceOreBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)));
+    public static final DeferredBlock<Block> MYTHIC_STONE = registerBlock("mythic_stone", () -> new
+            Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    // ARCANE STUFF
 
     public static final DeferredBlock<Block> ARCANE_ORE = registerBlock("arcane_ore", () -> new
             Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));

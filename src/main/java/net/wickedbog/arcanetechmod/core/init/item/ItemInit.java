@@ -23,4 +23,8 @@ public class ItemInit {
     public static final DeferredItem<Item> RUNIC_INGOT = ITEMS.register("runic_ingot", () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> RUNIC_PLATE = ITEMS.register("runic_plate", () -> new Item(new Item.Properties()));
+
+    // Mythic Essence Stuff
+
+    public static final DeferredItem<Item> MYTHIC_POWDER = ITEMS.register("mythic_powder", () -> new Item(new Item.Properties()));
 }

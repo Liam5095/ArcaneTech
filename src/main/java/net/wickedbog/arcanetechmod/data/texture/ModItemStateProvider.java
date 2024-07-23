@@ -21,6 +21,7 @@ public class ModItemStateProvider extends ItemModelProvider {
         item(ItemInit.RAW_RUNIC.get());
         item(ItemInit.RUNIC_INGOT.get());
         item(ItemInit.RUNIC_PLATE.get());
+        item(ItemInit.MYTHIC_POWDER.get());
     }
 
     private void item(Item item) {

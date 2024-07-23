@@ -19,6 +19,7 @@ import net.wickedbog.arcanetechmod.core.init.TagsInit;
 public class ModBiomesModifiers {
     protected static ResourceKey<BiomeModifier> ADD_ARCANE_ORE = registerKey("add_arcane_ore");
     protected static ResourceKey<BiomeModifier> ADD_RUNIC_ORE = registerKey("add_runic_ore");
+    protected static ResourceKey<BiomeModifier> ADD_MYTHIC_ESSENCE_ORE = registerKey("add_mythic_essence_ore");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         HolderGetter<PlacedFeature> placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -35,6 +36,12 @@ public class ModBiomesModifiers {
                 new BiomeModifiers.AddFeaturesBiomeModifier(
                         biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                         HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RUNIC_ORE)),
+                        GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(
+                ADD_MYTHIC_ESSENCE_ORE,
+                new BiomeModifiers.AddFeaturesBiomeModifier(
+                        biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.MYTHIC_ESSENCE_ORE)),
                         GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 

@@ -32,16 +32,22 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(BlockInit.RUNIC_ORE.get())
                 .add(BlockInit.DEEPSLATE_RUNIC_ORE.get());
 
+        tag(TagsInit.BlockTagsInit.MYTHIC_ESSENCE_ORE)
+                .add(BlockInit.MYTHIC_ESSENCE_ORE.get())
+                .add(BlockInit.DEEPSLATE_MYTHIC_ESSENCE_ORE.get());
+
         tag(TagsInit.BlockTagsInit.CUSTOM_ORES)
                 .addTag(TagsInit.BlockTagsInit.RUNIC_ORE)
-                .addTag(TagsInit.BlockTagsInit.ARCANE_ORE);
+                .addTag(TagsInit.BlockTagsInit.ARCANE_ORE)
+                .addTag(TagsInit.BlockTagsInit.MYTHIC_ESSENCE_ORE);
 
         tag(TagsInit.BlockTagsInit.ALL_ORES)
                 .addTag(TagsInit.BlockTagsInit.CUSTOM_ORES)
                 .addTag(Tags.Blocks.ORES);
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .addTag(TagsInit.BlockTagsInit.CUSTOM_ORES);
+                .addTag(TagsInit.BlockTagsInit.CUSTOM_ORES)
+                .add(BlockInit.MYTHIC_STONE.get());
 
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(BlockInit.ARCANE_GATEWAY.get());
@@ -52,10 +58,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .addTag(TagsInit.BlockTagsInit.ARCANE_ORE)
-                .addTag(TagsInit.BlockTagsInit.RUNIC_ORE);
+                .addTag(TagsInit.BlockTagsInit.MYTHIC_ESSENCE_ORE);
 
         tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(BlockInit.ARCANE_GATEWAY.get());
+                .add(BlockInit.ARCANE_GATEWAY.get())
+                .add(BlockInit.MYTHIC_STONE.get())
+                .addTag(TagsInit.BlockTagsInit.RUNIC_ORE);
 
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
         tag(Tags.Blocks.NEEDS_GOLD_TOOL);

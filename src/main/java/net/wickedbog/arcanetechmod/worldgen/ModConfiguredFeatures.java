@@ -20,6 +20,7 @@ public class ModConfiguredFeatures {
 
     protected static ResourceKey<ConfiguredFeature<?,?>> MYTHICAL_REALM_ARCANE_ORE = createKey("arcane_ore");
     protected static ResourceKey<ConfiguredFeature<?,?>> OVERWORLD_RUNIC_ORE = createKey("runic_ore");
+    protected static ResourceKey<ConfiguredFeature<?,?>> OVERWORLD_MYTHIC_ESSENCE_ORE = createKey("mythic_essence_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context) {
         RuleTest stoneReplacable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -29,9 +30,12 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(deepslateReplacable, BlockInit.DEEPSLATE_ARCANE_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> runicOre = List.of(OreConfiguration.target(stoneReplacable, BlockInit.RUNIC_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplacable, BlockInit.DEEPSLATE_RUNIC_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> mythicEssence = List.of(OreConfiguration.target(stoneReplacable, BlockInit.MYTHIC_ESSENCE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplacable, BlockInit.DEEPSLATE_MYTHIC_ESSENCE_ORE.get().defaultBlockState()));
 
         register(context, MYTHICAL_REALM_ARCANE_ORE, Feature.ORE, new OreConfiguration(arcaneOre,4));
         register(context, OVERWORLD_RUNIC_ORE, Feature.ORE, new OreConfiguration(runicOre,6));
+        register(context, OVERWORLD_MYTHIC_ESSENCE_ORE, Feature.ORE, new OreConfiguration(mythicEssence,5));
     }
 
     private static ResourceKey<ConfiguredFeature<?, ?>> createKey(String name) {

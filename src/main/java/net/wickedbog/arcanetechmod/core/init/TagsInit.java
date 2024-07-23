@@ -15,6 +15,7 @@ public class TagsInit {
     public static class BlockTagsInit {
         public static TagKey<Block> ARCANE_ORE = BlockTags.create(createResourceLocation("ores/arcane_ore"));
         public static TagKey<Block> RUNIC_ORE = BlockTags.create(createResourceLocation("ores/runic_ore"));
+        public static TagKey<Block> MYTHIC_ESSENCE_ORE = BlockTags.create(createResourceLocation("ores/mythic_essence_ore"));
         public static TagKey<Block> CUSTOM_ORES = BlockTags.create(createResourceLocation("custom_ores"));
         public static TagKey<Block> ALL_ORES = BlockTags.create(createResourceLocation("all_ores"));
 

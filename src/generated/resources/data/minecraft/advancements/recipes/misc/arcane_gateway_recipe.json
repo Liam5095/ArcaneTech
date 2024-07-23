@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_runic_ingot": {
+    "has_mythic_stone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "arcanetechmod:runic_ingot"
+              "arcanetechmod:mythic_stone"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:arcanetechmod"
+        "recipe": "minecraft:arcane_gateway_recipe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_runic_ingot"
+      "has_mythic_stone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:arcanetechmod"
+      "minecraft:arcane_gateway_recipe"
     ]
   }
 }

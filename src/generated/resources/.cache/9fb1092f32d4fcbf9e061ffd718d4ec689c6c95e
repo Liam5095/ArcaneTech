@@ -1,4 +1,4 @@
-// 1.20.4	2024-07-22T20:47:48.5552545	Recipes
+// 1.20.4	2024-07-23T08:56:14.9473246	Recipes
 09da14cbc83f04e5eb594d6a427874be471e8851 data/arcanetechmod/advancements/recipes/misc/deepslate_raw_arcane_ore_blasting.json
 2bd268790ae4e05a80aadcc08df881af1aca74e7 data/arcanetechmod/advancements/recipes/misc/deepslate_raw_arcane_ore_smelting.json
 caaee04ae181946fda3287e4d8fb2e56b93d3e46 data/arcanetechmod/advancements/recipes/misc/deepslate_raw_runic_ore_blasting.json
@@ -23,5 +23,9 @@ eba236a091a15110383cf41d806598d799325214 data/arcanetechmod/recipes/raw_arcane_o
 76041648aab477f19de19683c2c3af9a58d446b4 data/arcanetechmod/recipes/raw_runic_ore_blasting.json
 be43723daf056f94e56367a3e47dc02657471f18 data/arcanetechmod/recipes/raw_runic_ore_smelting.json
 be8115ee43e20a6a2e757b056aa217aa56bafacd data/arcanetechmod/recipes/raw_runic_smelting.json
-a363ff331a1451343af11d5b641fc13e68c86d96 data/minecraft/advancements/recipes/misc/arcanetechmod.json
-51ef0f23d084fafc17aab924291af8d9f5156b14 data/minecraft/recipes/arcanetechmod.json
+e7202c2cc251162d641c9327cf07ba630d3a981d data/minecraft/advancements/recipes/misc/arcane_gateway_recipe.json
+20d2ac8f929ad8c488da19f7dc9b3b07509d37a6 data/minecraft/advancements/recipes/misc/mythic_stone_recipe.json
+62b9a544d4c6e50d74c1c456a9b9995078d4590f data/minecraft/advancements/recipes/misc/runic_ingot_to_runic_plate_recipe.json
+da17d535112b9e252fb8181cdc03b04d1e0b5a50 data/minecraft/recipes/arcane_gateway_recipe.json
+4d5721d09e9fecb8fdbcb1a61c1ec759981952a0 data/minecraft/recipes/mythic_stone_recipe.json
+51ef0f23d084fafc17aab924291af8d9f5156b14 data/minecraft/recipes/runic_ingot_to_runic_plate_recipe.json

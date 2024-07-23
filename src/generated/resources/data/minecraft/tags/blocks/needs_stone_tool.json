@@ -1,5 +1,7 @@
 {
   "values": [
-    "arcanetechmod:arcane_gateway"
+    "arcanetechmod:arcane_gateway",
+    "arcanetechmod:mythic_stone",
+    "#forge:ores/runic_ore"
   ]
 }

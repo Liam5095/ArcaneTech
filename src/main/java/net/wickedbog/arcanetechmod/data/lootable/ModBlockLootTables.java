@@ -3,7 +3,14 @@ package net.wickedbog.arcanetechmod.data.lootable;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
 import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
@@ -28,10 +35,29 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         add(BlockInit.RUNIC_ORE.get(), createOreDrop(BlockInit.RUNIC_ORE.get(), ItemInit.RAW_RUNIC.get()));
         add(BlockInit.DEEPSLATE_RUNIC_ORE.get(), createOreDrop(BlockInit.DEEPSLATE_RUNIC_ORE.get(), ItemInit.RAW_RUNIC.get()));
 
+        // Mythic Essence
+        add(BlockInit.MYTHIC_ESSENCE_ORE.get(), createMythicEssenceDrops(BlockInit.MYTHIC_ESSENCE_ORE.get()));
+        add(BlockInit.DEEPSLATE_MYTHIC_ESSENCE_ORE.get(), createMythicEssenceDrops(BlockInit.MYTHIC_ESSENCE_ORE.get()));
+
         // DropSelf
 
         dropSelf(BlockInit.EXAMPLE_BLOCK.get());
         dropSelf(BlockInit.ARCANE_GATEWAY.get());
+
+        // DropSelf Mythic Essence
+        dropSelf(BlockInit.MYTHIC_STONE.get());
+    }
+
+    protected LootTable.Builder createMythicEssenceDrops(Block pBlock) {
+        return createSilkTouchDispatchTable(
+                pBlock,
+                this.applyExplosionDecay(
+                        pBlock,
+                        LootItem.lootTableItem(ItemInit.MYTHIC_POWDER)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(3.0F, 5.0F)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))
+                )
+        );
     }
 
     @Override

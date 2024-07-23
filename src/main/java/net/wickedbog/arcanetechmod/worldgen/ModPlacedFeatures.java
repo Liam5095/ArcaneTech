@@ -18,6 +18,7 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ARCANE_ORE = createKey("arcane_ore");
     public static final ResourceKey<PlacedFeature> RUNIC_ORE = createKey("runic_ore");
+    public static final ResourceKey<PlacedFeature> MYTHIC_ESSENCE_ORE = createKey("mythic_essence_ore");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?,?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -26,11 +27,14 @@ public class ModPlacedFeatures {
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.MYTHICAL_REALM_ARCANE_ORE);
         Holder<ConfiguredFeature<?,? >> holder1 =
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUNIC_ORE);
+        Holder<ConfiguredFeature<?,? >> holder2 =
+                configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_MYTHIC_ESSENCE_ORE);
 
 
         // 3 veins per chunk, between y -64 and 50
-        register(context, ARCANE_ORE, holder, ModOrePlacement.commonOrePlacements(3, HeightRangePlacement.uniform(VerticalAnchor.absolute(-25), VerticalAnchor.absolute(20))));
-        register(context, RUNIC_ORE, holder1, ModOrePlacement.commonOrePlacements(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-10), VerticalAnchor.absolute(42))));
+        register(context, ARCANE_ORE, holder, ModOrePlacement.commonOrePlacements(3, HeightRangePlacement.uniform(VerticalAnchor.absolute(-30), VerticalAnchor.absolute(20))));
+        register(context, RUNIC_ORE, holder1, ModOrePlacement.commonOrePlacements(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-15), VerticalAnchor.absolute(42))));
+        register(context, MYTHIC_ESSENCE_ORE, holder2, ModOrePlacement.commonOrePlacements(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-25), VerticalAnchor.absolute(30))));
     }
 
 

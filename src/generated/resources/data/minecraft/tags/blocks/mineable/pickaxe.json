@@ -1,5 +1,6 @@
 {
   "values": [
-    "#forge:custom_ores"
+    "#forge:custom_ores",
+    "arcanetechmod:mythic_stone"
   ]
 }
