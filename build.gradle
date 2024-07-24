@@ -89,9 +89,6 @@ configurations {
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
     implementation 'com.github.glitchfiend:TerraBlender-neoforge:1.20.4-3.3.0.12'
-    implementation "foundry.veil:Veil-forge-${project.minecraft_version}:${project.veil_version}"
-
-    //implementation "curse.maven:terrablender-neoforge-940057:5033381"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

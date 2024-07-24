@@ -1,17 +1,10 @@
 package net.wickedbog.arcanetechmod;
 
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.ComposterBlock;
-import net.minecraft.world.level.block.FlowerPotBlock;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.neoforge.common.brewing.BrewingRecipeRegistry;
 import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
 import net.wickedbog.arcanetechmod.core.init.CreativeModeTabInit;
 import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
