@@ -46,6 +46,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         // DropSelf Mythic Essence
         dropSelf(BlockInit.MYTHIC_STONE.get());
+
+        // Wood stuff
+
+        dropSelf(BlockInit.GLOWWOOD_LOG.get());
+        dropSelf(BlockInit.GLOWWOOD.get());
+        dropSelf(BlockInit.STRIPPED_GLOWWOOD_LOG.get());
+        dropSelf(BlockInit.STRIPPED_GLOWWOOD.get());
+        dropSelf(BlockInit.GLOWWOOD_PLANKS.get());
+        dropSelf(BlockInit.GLOWWOOD_SAPLING.get());
+
+        add(BlockInit.GLOWWOOD_LEAVES.get(), block ->
+                createLeavesDrops(block, BlockInit.GLOWWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     protected LootTable.Builder createMythicEssenceDrops(Block pBlock) {

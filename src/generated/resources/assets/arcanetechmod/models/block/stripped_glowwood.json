@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "arcanetechmod:block/stripped_glowwood_log",
+    "side": "arcanetechmod:block/stripped_glowwood_log"
+  }
+}

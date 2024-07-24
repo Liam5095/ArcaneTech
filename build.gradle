@@ -12,6 +12,10 @@ group = mod_group_id
 
 repositories {
     maven { url = 'https://maven.minecraftforge.net/' }
+    maven {
+        name = 'BlameJared Maven (CrT / Bookshelf)'
+        url = 'https://maven.blamejared.com'
+    }
     mavenLocal()
 }
 
@@ -85,6 +89,8 @@ configurations {
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
     implementation 'com.github.glitchfiend:TerraBlender-neoforge:1.20.4-3.3.0.12'
+    implementation "foundry.veil:Veil-forge-${project.minecraft_version}:${project.veil_version}"
+
     //implementation "curse.maven:terrablender-neoforge-940057:5033381"
 }
 

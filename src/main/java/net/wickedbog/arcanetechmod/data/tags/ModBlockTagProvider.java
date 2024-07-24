@@ -24,6 +24,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        // ORE STUFF
+
         tag(TagsInit.BlockTagsInit.ARCANE_ORE)
                 .add(BlockInit.ARCANE_ORE.get())
                 .add(BlockInit.DEEPSLATE_ARCANE_ORE.get());
@@ -45,6 +47,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(TagsInit.BlockTagsInit.CUSTOM_ORES)
                 .addTag(Tags.Blocks.ORES);
 
+        // MINEABLE STUFF
+
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .addTag(TagsInit.BlockTagsInit.CUSTOM_ORES)
                 .add(BlockInit.MYTHIC_STONE.get());
@@ -55,6 +59,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.SWORD_EFFICIENT); // I THINK
         tag(BlockTags.MINEABLE_WITH_HOE);
         tag(BlockTags.MINEABLE_WITH_SHOVEL);
+
+        // NEEDS ... TOOL STUFF
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .addTag(TagsInit.BlockTagsInit.ARCANE_ORE)
@@ -68,6 +74,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
         tag(Tags.Blocks.NEEDS_GOLD_TOOL);
         tag(Tags.Blocks.NEEDS_WOOD_TOOL);
+
+        // WOOD STUFF
+
+        tag(BlockTags.LOGS_THAT_BURN)
+                .add(BlockInit.GLOWWOOD_LOG.get())
+                .add(BlockInit.GLOWWOOD.get())
+                .add(BlockInit.STRIPPED_GLOWWOOD_LOG.get())
+                .add(BlockInit.STRIPPED_GLOWWOOD.get());
+
+        tag(BlockTags.PLANKS)
+                .add(BlockInit.GLOWWOOD_PLANKS.get());
     }
 
     private static TagKey<Block> createForgeTag(String name) {

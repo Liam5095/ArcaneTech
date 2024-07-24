@@ -1,19 +1,23 @@
 package net.wickedbog.arcanetechmod.core.init.block;
 
+import foundry.veil.api.opencl.VeilOpenCL;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
+import net.wickedbog.arcanetechmod.core.init.TreeGrowerInit;
 import net.wickedbog.arcanetechmod.core.init.block.custom.ArcaneGatewayBlock;
+import net.wickedbog.arcanetechmod.core.init.block.custom.ModFlammableRotatedPillarBlock;
 import net.wickedbog.arcanetechmod.core.init.block.custom.MythicEssenceOreBlock;
 import net.wickedbog.arcanetechmod.core.init.block.custom.RunicOreBlock;
 import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
@@ -21,6 +25,7 @@ import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 import java.util.function.Supplier;
 
 public class BlockInit {
+
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ArcaneTechMod.MOD_ID);
 
     // DEBUG / TESTING STUFF
@@ -54,23 +59,60 @@ public class BlockInit {
     public static final DeferredBlock<Block> ARCANE_GATEWAY = registerBlock("arcane_gateway", () -> new
             ArcaneGatewayBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_PORTAL).noOcclusion()));
 
-    //public static final DeferredBlock<Block> ARCANE_LOG = registerBlock("arcane_log", () -> log(MapColor.WOOD, MapColor.PODZOL));
+    // Glowwood
+
+    public static final DeferredBlock<Block> GLOWWOOD_LOG = registerBlock("glowwood_log", () -> new
+            ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> GLOWWOOD = registerBlock("glowwood", () -> new
+            ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> STRIPPED_GLOWWOOD_LOG = registerBlock("stripped_glowwood_log", () -> new
+            ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+    public static final DeferredBlock<Block> STRIPPED_GLOWWOOD = registerBlock("stripped_glowwood", () -> new
+            ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final DeferredBlock<Block> GLOWWOOD_PLANKS = registerBlock("glowwood_planks", () -> new
+            Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final DeferredBlock<Block> GLOWWOOD_LEAVES = registerBlock("glowwood_leaves", () -> new
+            Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
+    public static final DeferredBlock<Block> GLOWWOOD_SAPLING = registerBlock("glowwood_sapling", () -> new
+            SaplingBlock(TreeGrowerInit.GLOWWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
     public static DeferredBlock<Block> registerBlock(
             String name, Supplier<Block> block) {
         DeferredBlock<Block> blockReg = BLOCKS.register(name, block);
         ItemInit.ITEMS.register(name, () -> new BlockItem(blockReg.get(), new Item.Properties()));
         return blockReg;
-    }
-
-    public static Block log(MapColor pTopMapColor, MapColor pSideMapColor) {
-        return new RotatedPillarBlock(
-                BlockBehaviour.Properties.of()
-                        .mapColor(p_152624_ -> p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? pTopMapColor : pSideMapColor)
-                        .instrument(NoteBlockInstrument.BASS)
-                        .strength(2.0F)
-                        .sound(SoundType.WOOD)
-                        .ignitedByLava()
-        );
     }
 }

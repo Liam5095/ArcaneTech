@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "arcanetechmod:block/stripped_glowwood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "arcanetechmod:block/stripped_glowwood"
+    },
+    "axis=z": {
+      "model": "arcanetechmod:block/stripped_glowwood_horizontal",
+      "x": 90
+    }
+  }
+}

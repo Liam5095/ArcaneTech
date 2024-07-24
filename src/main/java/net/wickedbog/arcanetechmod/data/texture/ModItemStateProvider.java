@@ -2,9 +2,11 @@ package net.wickedbog.arcanetechmod.data.texture;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
+import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
 import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 import net.wickedbog.arcanetechmod.util.NameUtility;
 
@@ -22,6 +24,8 @@ public class ModItemStateProvider extends ItemModelProvider {
         item(ItemInit.RUNIC_INGOT.get());
         item(ItemInit.RUNIC_PLATE.get());
         item(ItemInit.MYTHIC_POWDER.get());
+
+        saplingItem(BlockInit.GLOWWOOD_SAPLING.get());
     }
 
     private void item(Item item) {
@@ -36,5 +40,12 @@ public class ModItemStateProvider extends ItemModelProvider {
         getBuilder(name)
                 .parent(getExistingFile(mcLoc("item/handheld")))
                 .texture("layer0", "item/" + name);
+    }
+
+    private void saplingItem(Block Block) {
+        String name = NameUtility.getBlockName(Block);
+        getBuilder(name)
+                .parent(getExistingFile(mcLoc("item/generated")))
+                .texture("layer0", "block/" + name);
     }
 }
