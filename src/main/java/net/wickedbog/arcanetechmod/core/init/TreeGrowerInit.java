@@ -13,8 +13,8 @@ public class TreeGrowerInit {
         Optional.empty(),
         Optional.empty(),
         Optional.of(ModConfiguredFeatures.GLOWWOOD_TREE_KEY),
-        Optional.of(TreeFeatures.FANCY_OAK),
-        Optional.of(TreeFeatures.OAK_BEES_005),
-        Optional.of(TreeFeatures.FANCY_OAK_BEES_005)
+        Optional.of(TreeFeatures.SPRUCE),
+            Optional.empty(),
+            Optional.empty()
     );
 }

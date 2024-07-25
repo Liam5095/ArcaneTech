@@ -38,6 +38,7 @@ public class TagsInit {
 
     public static class BiomeTagsInit {
         public static TagKey<Biome> IS_MYTHICAL_REALM = createBiomeTag("is_mythical_realm");
+        public static TagKey<Biome> IS_ENHANCED_FOREST = createBiomeTag("is_enhanced_forest");
 
         private static TagKey<Biome> createBiomeTag(String pName) {
             return TagKey.create(Registries.BIOME, new ResourceLocation(pName));

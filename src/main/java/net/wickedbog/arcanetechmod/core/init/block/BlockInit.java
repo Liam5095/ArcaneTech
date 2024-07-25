@@ -85,7 +85,7 @@ public class BlockInit {
             });
 
     public static final DeferredBlock<Block> GLOWWOOD_LEAVES = registerBlock("glowwood_leaves", () -> new
-            Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
+            LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LEAVES)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
