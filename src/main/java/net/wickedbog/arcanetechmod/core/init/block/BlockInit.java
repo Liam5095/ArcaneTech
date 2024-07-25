@@ -100,10 +100,20 @@ public class BlockInit {
                 public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 30;
                 }
+
+                @Override
+                public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
+                    return 5;
+                }
             });
 
     public static final DeferredBlock<Block> GLOWWOOD_SAPLING = registerBlock("glowwood_sapling", () -> new
-            SaplingBlock(TreeGrowerInit.GLOWWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            SaplingBlock(TreeGrowerInit.GLOWWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)) {
+                @Override
+                public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
+                    return 8;
+                }
+            });
 
     public static DeferredBlock<Block> registerBlock(
             String name, Supplier<Block> block) {
