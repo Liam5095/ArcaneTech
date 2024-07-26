@@ -55,7 +55,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(BlockInit.GLOWWOOD_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(BlockInit.GLOWWOOD_LEAVES.get()),
-                new PineFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), ConstantInt.of(3)),
+                new PineFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), ConstantInt.of(4)),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 

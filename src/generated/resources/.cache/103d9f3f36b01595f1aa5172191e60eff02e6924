@@ -1,4 +1,4 @@
-// 1.20.4	2024-07-25T12:15:10.3640913	Registries
+// 1.20.4	2024-07-25T12:51:01.0722086	Registries
 b04b41114799c77af1c4bb1161c4fa6d66f9e209 data/arcanetechmod/dimension/mythical_realm.json
 0f43e37ea0496d3aea49b747e62ab4c441dcb3d5 data/arcanetechmod/dimension_type/mythical_realm_type.json
 7ad24ac1cded81b405b6601bea0dc6dd22f26efe data/arcanetechmod/neoforge/biome_modifier/add_arcane_ore.json
@@ -7,7 +7,7 @@ b04b41114799c77af1c4bb1161c4fa6d66f9e209 data/arcanetechmod/dimension/mythical_r
 e07539141c50a870060fddbfe98bda7414abb87b data/arcanetechmod/neoforge/biome_modifier/add_tree_glowwood.json
 f932d101d3aa7e6b136d3adddd20ad1ebf5dc8cf data/arcanetechmod/worldgen/biome/enchaned_forest.json
 bfd3f2ea272f00dd64f4c6d71b32ce52da6f3709 data/arcanetechmod/worldgen/configured_feature/arcane_ore.json
-e5c5861b2ed11b0a6766cdb4eb7148b4937a5ebc data/arcanetechmod/worldgen/configured_feature/glowwood_tree.json
+6df857d4fb011158b486811296d85ecb57682c99 data/arcanetechmod/worldgen/configured_feature/glowwood_tree.json
 e3c867072a5793b6f7d5055704279829b8c6c896 data/arcanetechmod/worldgen/configured_feature/mythic_essence_ore.json
 43ebce576f1899fdec73822aec84fd32d8b87452 data/arcanetechmod/worldgen/configured_feature/runic_ore.json
 99e42ac55749c03c9d1fa86a1d0180bdc5fe9577 data/arcanetechmod/worldgen/placed_feature/arcane_ore_placed.json
