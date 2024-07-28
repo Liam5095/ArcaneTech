@@ -7,6 +7,9 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
 import net.wickedbog.arcanetechmod.core.init.CreativeModeTabInit;
+//import net.wickedbog.arcanetechmod.core.init.entity.EntityTypesInit;
+import net.wickedbog.arcanetechmod.core.init.entity.EntityInit;
+import net.wickedbog.arcanetechmod.core.init.entity.custom.FairySwarmEntity;
 import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 import net.wickedbog.arcanetechmod.data.DataGenerators;
 import net.wickedbog.arcanetechmod.worldgen.biome.ModTerraBlenderAPI;
@@ -26,6 +29,7 @@ public class ArcaneTechMod {
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         CreativeModeTabInit.CREATIVE_MODE_TABS.register(bus);
+        EntityInit.REGISTRY.register(bus);
 
         ModTerraBlenderAPI.registerRegions();
 
@@ -45,6 +49,7 @@ public class ArcaneTechMod {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
+            FairySwarmEntity.init();
         });
     }
 }

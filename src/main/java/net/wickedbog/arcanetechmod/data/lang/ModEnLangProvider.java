@@ -34,6 +34,14 @@ public class ModEnLangProvider extends LanguageProvider {
         addBlock(BlockInit.MYTHIC_ESSENCE_ORE, "Mythic Essence Ore");
         addBlock(BlockInit.DEEPSLATE_MYTHIC_ESSENCE_ORE, "Deepslate Mythic Essence Ore");
         addBlock(BlockInit.MYTHIC_STONE, "Mythic Stone");
+        addBlock(BlockInit.GLOWWOOD_LOG, "Glowwood Log");
+        addBlock(BlockInit.GLOWWOOD, "Glowwood");
+        addBlock(BlockInit.STRIPPED_GLOWWOOD_LOG, "Stripped Glowwood Log");
+        addBlock(BlockInit.STRIPPED_GLOWWOOD, "Stripped Glowwood");
+        addBlock(BlockInit.GLOWWOOD_PLANKS, "Glowwood Planks");
+        addBlock(BlockInit.GLOWWOOD_LEAVES, "Glowwood Leaves");
+        addBlock(BlockInit.GLOWWOOD_SAPLING, "Glowwood Sapling");
+        addBlock(BlockInit.MYSTIC_FLOWER, "Mystic Flower");
 
         // Others
         add("creativetab.arcanemod", "ArcaneTech Tab");

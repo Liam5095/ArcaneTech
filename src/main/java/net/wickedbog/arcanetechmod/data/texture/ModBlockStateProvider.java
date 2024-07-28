@@ -1,8 +1,6 @@
 package net.wickedbog.arcanetechmod.data.texture;
 
-import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -10,7 +8,6 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
 
@@ -46,7 +43,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         leavesBlock(BlockInit.GLOWWOOD_LEAVES.get());
         saplingBlock(BlockInit.GLOWWOOD_SAPLING.get());
-        //normalBlock(BlockInit.ARCANE_GATEWAY.get());
     }
 
     protected void normalBlock(Block block) {

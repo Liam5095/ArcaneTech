@@ -43,6 +43,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         dropSelf(BlockInit.EXAMPLE_BLOCK.get());
         dropSelf(BlockInit.ARCANE_GATEWAY.get());
+        dropSelf(BlockInit.MYSTIC_FLOWER.get());
 
         // DropSelf Mythic Essence
         dropSelf(BlockInit.MYTHIC_STONE.get());
