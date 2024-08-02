@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_crystal_caves",
+  "features": "arcanetechmod:blue_crystal_placed",
+  "step": "underground_decoration"
+}

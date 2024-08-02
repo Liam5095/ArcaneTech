@@ -15,14 +15,33 @@ import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.core.init.TagsInit;
-import net.wickedbog.arcanetechmod.worldgen.biome.ModBiomes;
+import net.wickedbog.arcanetechmod.worldgen.features.ModPlacedFeatures;
 
 public class ModBiomesModifiers {
-    protected static ResourceKey<BiomeModifier> ADD_ARCANE_ORE = registerKey("add_arcane_ore");
-    protected static ResourceKey<BiomeModifier> ADD_RUNIC_ORE = registerKey("add_runic_ore");
-    protected static ResourceKey<BiomeModifier> ADD_MYTHIC_ESSENCE_ORE = registerKey("add_mythic_essence_ore");
 
-    protected static ResourceKey<BiomeModifier> ADD_TREE_GLOWWOOD = registerKey("add_tree_glowwood");
+    // ORES
+
+    public static final ResourceKey<BiomeModifier> ADD_ARCANE_ORE = registerKey("add_arcane_ore");
+    public static final ResourceKey<BiomeModifier> ADD_RUNIC_ORE = registerKey("add_runic_ore");
+    public static final ResourceKey<BiomeModifier> ADD_MYTHIC_ESSENCE_ORE = registerKey("add_mythic_essence_ore");
+
+    // TREES
+
+    public static final ResourceKey<BiomeModifier> ADD_TREE_GLOWWOOD = registerKey("add_tree_glowwood");
+
+    // ENTITY SPAWNING
+
+    //public static final ResourceKey<BiomeModifier> SPAWN_FAIRY_SWARM = registerKey("spawn_fairy_swarm");
+
+    // FLOWERS
+
+    public static final ResourceKey<BiomeModifier> ADD_MYSTIC_FLOWER = registerKey("add_mystic_flower");
+
+    // CRYSTALS
+
+    public static final ResourceKey<BiomeModifier> ADD_RED_CRYSTAL = registerKey("add_red_crystal");
+    public static final ResourceKey<BiomeModifier> ADD_GREEN_CRYSTAL = registerKey("add_green_crystal");
+    public static final ResourceKey<BiomeModifier> ADD_BLUE_CRYSTAL = registerKey("add_blue_crystal");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         HolderGetter<PlacedFeature> placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -56,6 +75,48 @@ public class ModBiomesModifiers {
                         biomes.getOrThrow(TagsInit.BiomeTagsInit.IS_ENHANCED_FOREST),
                         HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.GLOWWOOD_PLACED_KEY)),
                         GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        // ENTITY SPAWNING
+
+        //context.register(
+        //        SPAWN_FAIRY_SWARM,
+        //        new BiomeModifiers.AddSpawnsBiomeModifier(
+        //                biomes.getOrThrow(TagsInit.BiomeTagsInit.IS_ENHANCED_FOREST),
+        //                List.of(new MobSpawnSettings.SpawnerData(EntityInit.FAIRY_SWARM.get(), 50,1 ,4))
+        //        )
+        //);
+
+        // FLOWERS
+
+        context.register(ADD_MYSTIC_FLOWER,
+                new BiomeModifiers.AddFeaturesBiomeModifier(
+                        biomes.getOrThrow(TagsInit.BiomeTagsInit.IS_ENHANCED_FOREST),
+                        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.MYSTIC_FLOWER_PLACED_KEY)),
+                        GenerationStep.Decoration.VEGETAL_DECORATION
+                ));
+
+        // CRYSTALS
+
+        context.register(ADD_RED_CRYSTAL,
+                new BiomeModifiers.AddFeaturesBiomeModifier(
+                        biomes.getOrThrow(TagsInit.BiomeTagsInit.IS_CRYSTAL_CAVES),
+                        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RED_CRYSTAL_PLACED_KEY)),
+                        GenerationStep.Decoration.UNDERGROUND_DECORATION
+                ));
+
+        context.register(ADD_GREEN_CRYSTAL,
+                new BiomeModifiers.AddFeaturesBiomeModifier(
+                        biomes.getOrThrow(TagsInit.BiomeTagsInit.IS_CRYSTAL_CAVES),
+                        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.GREEN_CRYSTAL_PLACED_KEY)),
+                        GenerationStep.Decoration.UNDERGROUND_DECORATION
+                ));
+
+        context.register(ADD_BLUE_CRYSTAL,
+                new BiomeModifiers.AddFeaturesBiomeModifier(
+                        biomes.getOrThrow(TagsInit.BiomeTagsInit.IS_CRYSTAL_CAVES),
+                        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.BLUE_CRYSTAL_PLACED_KEY    )),
+                        GenerationStep.Decoration.UNDERGROUND_DECORATION
+                ));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {

@@ -1,18 +1,21 @@
-// 1.20.4	2024-07-24T15:22:16.6318603	Tags for minecraft:block mod id arcanetechmod
-b5a9b92a97a23704bec9b69ad14401a2f6253955 data/forge/tags/blocks/all_ores.json
-d76c70ed9a8f36d415c43208dff253d9c6d605cf data/forge/tags/blocks/custom_ores.json
+// 1.20.4	2024-08-02T08:23:36.4976737	Tags for minecraft:block mod id arcanetechmod
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_gold_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_wood_tool.json
-6c002a3a67c1cb9079bfb2963633130e16b45939 data/forge/tags/blocks/ores/arcane_ore.json
-56d4c19db8bb9dce3e763947f3505dcd96c561a9 data/forge/tags/blocks/ores/mythic_essence_ore.json
-b1ed60f1c21e47fc19eec7b43596ce56a68d185b data/forge/tags/blocks/ores/runic_ore.json
+3e1a46eea2c90f44750fe1c767911db30c993d1f data/forge/tags/blocks/replacables/underground/all_underground_replacables.json
+3928605d32153c303eb5f5619464f3514224cdd7 data/forge/tags/blocks/underground/crystals/all_crystals.json
+88e9058d01d1bb1c1c9935096d7a99a682892886 data/forge/tags/blocks/underground/ores/all_ores.json
+6c002a3a67c1cb9079bfb2963633130e16b45939 data/forge/tags/blocks/underground/ores/arcane_ore.json
+eb0ecee76f5d2ef53246cd258d1540ea248359e0 data/forge/tags/blocks/underground/ores/custom_ores.json
+56d4c19db8bb9dce3e763947f3505dcd96c561a9 data/forge/tags/blocks/underground/ores/mythic_essence_ore.json
+b1ed60f1c21e47fc19eec7b43596ce56a68d185b data/forge/tags/blocks/underground/ores/runic_ore.json
 ca747edd9a6f5c8dcd790774bc605b0d603bc0ae data/minecraft/tags/blocks/logs_that_burn.json
 071efc333b60c7ee44275232676138470f281c4c data/minecraft/tags/blocks/mineable/axe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
-2df614c187c41c556994628e7b55ab06755f5575 data/minecraft/tags/blocks/mineable/pickaxe.json
+74432fd6c3f038ccbbf1351e949b854d643486c4 data/minecraft/tags/blocks/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
-16ca348fc5aa37d50852a7aa93cac2c76e88b465 data/minecraft/tags/blocks/needs_iron_tool.json
-f8ab6ef78c07c87a26dd73c850f9e3d8cfefc2aa data/minecraft/tags/blocks/needs_stone_tool.json
+cc2b74aba41ee010a1a2d2d66621e6f5d1de7399 data/minecraft/tags/blocks/needs_diamond_tool.json
+79cb31f9c87b23e8318340d53610de15bc718edd data/minecraft/tags/blocks/needs_iron_tool.json
+e08fbc3bf5893927f376583088a87b1faf41ca13 data/minecraft/tags/blocks/needs_stone_tool.json
 95fcba2bc1e417882b10693599558c4b33a91532 data/minecraft/tags/blocks/planks.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/sword_efficient.json

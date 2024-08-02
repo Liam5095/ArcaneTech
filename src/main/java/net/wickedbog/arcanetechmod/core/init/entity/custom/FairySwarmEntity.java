@@ -1,6 +1,7 @@
 package net.wickedbog.arcanetechmod.core.init.entity.custom;
 
 import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
@@ -23,6 +24,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.wickedbog.arcanetechmod.core.init.entity.EntityInit;
+import net.wickedbog.arcanetechmod.core.init.entity.ai.FairySwarmGoal;
+import net.wickedbog.arcanetechmod.core.particle.FairySwarmParticleSpawning;
 
 public class FairySwarmEntity extends Monster {
 	public final AnimationState idleAnimationState = new AnimationState();
@@ -44,7 +47,8 @@ public class FairySwarmEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8, 20) {
+		this.goalSelector.addGoal(0, new FairySwarmGoal(this));
+		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = FairySwarmEntity.this.getRandom();
@@ -54,13 +58,19 @@ public class FairySwarmEntity extends Monster {
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
-		this.goalSelector.addGoal(3, new PanicGoal(this, 1.2));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(2, new PanicGoal(this, 1.2));
+		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
 	}
 
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
+	}
+
+	@Override
+	public void playerTouch(Player sourceentity) {
+		super.playerTouch(sourceentity);
+		FairySwarmParticleSpawning.spawn(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

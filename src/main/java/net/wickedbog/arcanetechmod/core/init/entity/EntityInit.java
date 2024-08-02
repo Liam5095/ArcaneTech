@@ -25,7 +25,7 @@ public class EntityInit {
 	public static final DeferredHolder<EntityType<?>, EntityType<FairySwarmEntity>> FAIRY_SWARM = register("fairy_swarm",
 			EntityType.Builder.<FairySwarmEntity>of(FairySwarmEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.04f, 0.3f));
+					.sized(0.5f, 0.3f));
 
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

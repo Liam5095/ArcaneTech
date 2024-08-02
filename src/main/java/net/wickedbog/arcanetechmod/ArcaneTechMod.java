@@ -19,6 +19,7 @@ import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
 import net.wickedbog.arcanetechmod.core.init.CreativeModeTabInit;
 import net.wickedbog.arcanetechmod.core.init.entity.EntityInit;
 import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
+import net.wickedbog.arcanetechmod.core.particle.ParticleInit;
 import net.wickedbog.arcanetechmod.data.DataGenerators;
 import net.wickedbog.arcanetechmod.worldgen.biome.ModTerraBlenderAPI;
 import net.wickedbog.arcanetechmod.worldgen.biome.surface.ModSurfaceRules;
@@ -41,6 +42,7 @@ public class ArcaneTechMod {
         BlockInit.BLOCKS.register(bus);
         CreativeModeTabInit.CREATIVE_MODE_TABS.register(bus);
         EntityInit.REGISTRY.register(bus);
+        ParticleInit.PARTICLE_TYPES.register(bus);
 
         ModTerraBlenderAPI.registerRegions();
 

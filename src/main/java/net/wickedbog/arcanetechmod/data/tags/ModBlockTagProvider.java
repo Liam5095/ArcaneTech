@@ -47,10 +47,22 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(TagsInit.BlockTagsInit.CUSTOM_ORES)
                 .addTag(Tags.Blocks.ORES);
 
+        // CRYSTAL STUFF
+
+        tag(TagsInit.BlockTagsInit.ALL_UNDERGROUND_REPLACABLES)
+                .addTag(BlockTags.STONE_ORE_REPLACEABLES)
+                .addTag(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+
+        tag(TagsInit.BlockTagsInit.ALL_CRYSTALS)
+                .add(BlockInit.RED_CRYSTAL.get())
+                .add(BlockInit.GREEN_CRYSTAL.get())
+                .add(BlockInit.BLUE_CRYSTAL.get());
+
         // MINEABLE STUFF
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .addTag(TagsInit.BlockTagsInit.CUSTOM_ORES)
+                .addTag(TagsInit.BlockTagsInit.ALL_CRYSTALS)
                 .add(BlockInit.MYTHIC_STONE.get());
 
         tag(BlockTags.MINEABLE_WITH_AXE)
@@ -70,6 +82,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(BlockInit.ARCANE_GATEWAY.get())
                 .add(BlockInit.MYTHIC_STONE.get())
                 .addTag(TagsInit.BlockTagsInit.RUNIC_ORE);
+
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .addTag(TagsInit.BlockTagsInit.ALL_CRYSTALS);
 
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
         tag(Tags.Blocks.NEEDS_GOLD_TOOL);

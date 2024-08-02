@@ -3,6 +3,10 @@
     {
       "id": "arcanetechmod:enchaned_forest",
       "required": true
+    },
+    {
+      "id": "arcanetechmod:crystal_caves",
+      "required": true
     }
   ]
 }

@@ -1,6 +1,7 @@
 {
   "values": [
-    "#forge:custom_ores",
+    "#forge:underground/ores/custom_ores",
+    "#forge:underground/crystals/all_crystals",
     "arcanetechmod:mythic_stone"
   ]
 }

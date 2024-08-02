@@ -2,10 +2,15 @@ package net.wickedbog.arcanetechmod.data.lootable;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.data.loot.packs.VanillaBlockLoot;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.DoublePlantBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
@@ -43,7 +48,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         dropSelf(BlockInit.EXAMPLE_BLOCK.get());
         dropSelf(BlockInit.ARCANE_GATEWAY.get());
-        dropSelf(BlockInit.MYSTIC_FLOWER.get());
+
+        // DropSelf Crystals
+        dropSelf(BlockInit.RED_CRYSTAL.get());
+        dropSelf(BlockInit.GREEN_CRYSTAL.get());
+        dropSelf(BlockInit.BLUE_CRYSTAL.get());
 
         // DropSelf Mythic Essence
         dropSelf(BlockInit.MYTHIC_STONE.get());
@@ -59,6 +68,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         add(BlockInit.GLOWWOOD_LEAVES.get(), block ->
                 createLeavesDrops(block, BlockInit.GLOWWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        // Special Blocks
+
+        add(BlockInit.MYSTIC_FLOWER.get(), block ->
+                createSinglePropConditionTable(BlockInit.MYSTIC_FLOWER.get(), DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
     }
 
     protected LootTable.Builder createMythicEssenceDrops(Block pBlock) {

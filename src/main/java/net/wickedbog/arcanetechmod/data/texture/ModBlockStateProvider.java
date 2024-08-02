@@ -18,14 +18,32 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        // TESTING
+
         normalBlock(BlockInit.EXAMPLE_BLOCK.get());
+
+        // ARCANE
+
         normalBlock(BlockInit.ARCANE_ORE.get());
         normalBlock(BlockInit.DEEPSLATE_ARCANE_ORE.get());
+
+        // RUNIC
+
         normalBlock(BlockInit.RUNIC_ORE.get());
         normalBlock(BlockInit.DEEPSLATE_RUNIC_ORE.get());
+
+        // MYTHIC ESSENCE
+
         normalBlock(BlockInit.MYTHIC_ESSENCE_ORE.get());
         normalBlock(BlockInit.DEEPSLATE_MYTHIC_ESSENCE_ORE.get());
-        normalBlock(BlockInit.MYTHIC_STONE.get());
+
+        // CRYSTALS
+
+        normalBlock(BlockInit.RED_CRYSTAL.get());
+        normalBlock(BlockInit.GREEN_CRYSTAL.get());
+        normalBlock(BlockInit.BLUE_CRYSTAL.get());
+
+        // GLOWWOOD
 
         logBlock(((RotatedPillarBlock) BlockInit.GLOWWOOD_LOG.get()));
         axisBlock(((RotatedPillarBlock) BlockInit.GLOWWOOD.get()), blockTexture(BlockInit.GLOWWOOD_LOG.get()), blockTexture(BlockInit.GLOWWOOD_LOG.get()));
@@ -43,6 +61,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         leavesBlock(BlockInit.GLOWWOOD_LEAVES.get());
         saplingBlock(BlockInit.GLOWWOOD_SAPLING.get());
+
+        // OTHER
+
+        normalBlock(BlockInit.MYTHIC_STONE.get());
     }
 
     protected void normalBlock(Block block) {

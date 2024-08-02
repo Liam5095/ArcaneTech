@@ -8,8 +8,8 @@ import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.worldgen.ModBiomesModifiers;
-import net.wickedbog.arcanetechmod.worldgen.ModConfiguredFeatures;
-import net.wickedbog.arcanetechmod.worldgen.ModPlacedFeatures;
+import net.wickedbog.arcanetechmod.worldgen.features.ModConfiguredFeatures;
+import net.wickedbog.arcanetechmod.worldgen.features.ModPlacedFeatures;
 import net.wickedbog.arcanetechmod.worldgen.biome.ModBiomes;
 import net.wickedbog.arcanetechmod.worldgen.dimension.ModDimensions;
 

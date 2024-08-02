@@ -18,10 +18,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.core.init.TreeGrowerInit;
-import net.wickedbog.arcanetechmod.core.init.block.custom.ArcaneGatewayBlock;
-import net.wickedbog.arcanetechmod.core.init.block.custom.ModFlammableRotatedPillarBlock;
-import net.wickedbog.arcanetechmod.core.init.block.custom.MythicEssenceOreBlock;
-import net.wickedbog.arcanetechmod.core.init.block.custom.RunicOreBlock;
+import net.wickedbog.arcanetechmod.core.init.block.custom.*;
 import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 
 import java.util.function.Supplier;
@@ -61,7 +58,16 @@ public class BlockInit {
     public static final DeferredBlock<Block> ARCANE_GATEWAY = registerBlock("arcane_gateway", () -> new
             ArcaneGatewayBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_PORTAL).noOcclusion()));
 
-    // Glowwood
+    // CRYSTALS
+
+    public static final DeferredBlock<Block> RED_CRYSTAL = registerBlock("red_crystal", () -> new
+            CrystalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+    public static final DeferredBlock<Block> GREEN_CRYSTAL = registerBlock("green_crystal", () -> new
+            CrystalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+    public static final DeferredBlock<Block> BLUE_CRYSTAL = registerBlock("blue_crystal", () -> new
+            CrystalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+
+    // GLOWWOOD
 
     public static final DeferredBlock<Block> GLOWWOOD_LOG = registerBlock("glowwood_log", () -> new
             ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
@@ -121,10 +127,10 @@ public class BlockInit {
                 }
             });
 
-    public static final DeferredBlock<Block> MYSTIC_FLOWER = registerBlock("mystic_flower", () -> new
-            TallFlowerBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILAC)) {
-            });
+    // FLOWERS
 
+    public static final DeferredBlock<Block> MYSTIC_FLOWER = registerBlock("mystic_flower", () ->
+            new MysticFlowerBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILAC)));
     public static DeferredBlock<Block> registerBlock(
             String name, Supplier<Block> block) {
         DeferredBlock<Block> blockReg = BLOCKS.register(name, block);

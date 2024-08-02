@@ -2,6 +2,6 @@
   "values": [
     "arcanetechmod:arcane_gateway",
     "arcanetechmod:mythic_stone",
-    "#forge:ores/runic_ore"
+    "#forge:underground/ores/runic_ore"
   ]
 }

@@ -1,6 +1,7 @@
-// 1.20.4	2024-07-26T10:37:33.955483	Loot Tables
+// 1.20.4	2024-08-02T08:23:36.4986735	Loot Tables
 3737cd1066351c86eddb60428ebe101080317828 data/arcanetechmod/loot_tables/blocks/arcane_gateway.json
 055b1f2f3e8af833ae8de9686fed70d578a78aeb data/arcanetechmod/loot_tables/blocks/arcane_ore.json
+616c8bcdc46cc6c64ab8f714759c009de517d299 data/arcanetechmod/loot_tables/blocks/blue_crystal.json
 f38dc70695b50f80a0ec85593d46cb873617dd8e data/arcanetechmod/loot_tables/blocks/deepslate_arcane_ore.json
 f0fcd6da42badbc6719a48f2ceeb8fa51918d2e1 data/arcanetechmod/loot_tables/blocks/deepslate_mythic_essence_ore.json
 65e75e5850275a8429e80ec13dce2653d5db0cf7 data/arcanetechmod/loot_tables/blocks/deepslate_runic_ore.json
@@ -10,9 +11,11 @@ f0fcd6da42badbc6719a48f2ceeb8fa51918d2e1 data/arcanetechmod/loot_tables/blocks/d
 b837d19456287e45569c1a92210faf8ad24c40d1 data/arcanetechmod/loot_tables/blocks/glowwood_log.json
 34b2c8c3d6af7074ea47285cdc5defc777d811c8 data/arcanetechmod/loot_tables/blocks/glowwood_planks.json
 eb431506f3bdf650a4433aecc3d40e2a197d87df data/arcanetechmod/loot_tables/blocks/glowwood_sapling.json
-56854301b46361a32ac29ef412a9c5e665d1ade4 data/arcanetechmod/loot_tables/blocks/mystic_flower.json
+618322f8f8888b273ebbd6091c5048cfc77c2a53 data/arcanetechmod/loot_tables/blocks/green_crystal.json
+242ee2c588efe4d7be7e6fa7f4559c46c527a86d data/arcanetechmod/loot_tables/blocks/mystic_flower.json
 bb474336f97f0bf1d42e6f0d5e0b9660d311f573 data/arcanetechmod/loot_tables/blocks/mythic_essence_ore.json
 5ad656c1e2ca5c73f8e1efb17e74814f2407674c data/arcanetechmod/loot_tables/blocks/mythic_stone.json
+146ef7b08d97f0ba51d5bdcdc51ceec2ca3f3677 data/arcanetechmod/loot_tables/blocks/red_crystal.json
 2fc023ad51b9603f437c831c6bb01ba659cb4fbc data/arcanetechmod/loot_tables/blocks/runic_ore.json
 82e49440c4719c9000d87d790d0e3f512a46114a data/arcanetechmod/loot_tables/blocks/stripped_glowwood.json
 2a5c0ab860f45aaab479bf84a5e22dace32c2ac6 data/arcanetechmod/loot_tables/blocks/stripped_glowwood_log.json
