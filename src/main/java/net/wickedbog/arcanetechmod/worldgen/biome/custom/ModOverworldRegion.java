@@ -21,7 +21,7 @@ public class ModOverworldRegion extends Region {
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
-            //modifiedVanillaOverworldBuilder.replaceBiome(Biomes.FOREST, ModBiomes.ENCHANED_FOREST);
+            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.FOREST, ModBiomes.CRYSTAL_CAVES);
         });
     }
 }

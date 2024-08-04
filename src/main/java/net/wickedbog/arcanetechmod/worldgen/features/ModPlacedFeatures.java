@@ -80,7 +80,7 @@ public class ModPlacedFeatures {
 
         register(context, RED_CRYSTAL_PLACED_KEY, holder3, ModOrePlacement.commonOrePlacements(3, HeightRangePlacement.uniform(VerticalAnchor.absolute(-20), VerticalAnchor.absolute(35))));
         register(context, GREEN_CRYSTAL_PLACED_KEY, holder4, ModOrePlacement.commonOrePlacements(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-20), VerticalAnchor.absolute(35))));
-        register(context, BLUE_CRYSTAL_PLACED_KEY, holder5, ModOrePlacement.commonOrePlacements(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-15), VerticalAnchor.absolute(30))));
+        register(context, BLUE_CRYSTAL_PLACED_KEY, holder5, ModOrePlacement.rareOrePlacements(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-15), VerticalAnchor.absolute(30))));
     }
 
 

@@ -62,7 +62,6 @@ public class ArcaneTechMod {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
-            //FairySwarmEntity.init();
         });
     }
 

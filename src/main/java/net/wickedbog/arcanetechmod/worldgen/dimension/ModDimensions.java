@@ -8,7 +8,7 @@ import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Biomes;
@@ -35,7 +35,7 @@ public class ModDimensions {
 
     public static void bootstrapType(BootstapContext<DimensionType> context) {
         context.register(MYTHICAL_REALM_TYPE, new DimensionType(
-                OptionalLong.of(24000), // fixedTime
+                OptionalLong.empty(), // fixedTime
                 true, // hasSkylight
                 false, // hasCeiling
                 false, // ultraWarm
@@ -44,12 +44,12 @@ public class ModDimensions {
                 true, // bedWorks
                 false, // respawnAnchorWorks
                 -64, // minY
-                256, // height
-                256, // logicalHeight
+                384, // height
+                384, // logicalHeight
                 BlockTags.INFINIBURN_OVERWORLD, // infiniburn
                 BuiltinDimensionTypes.OVERWORLD_EFFECTS, // effectsLocation
-                1.0f, // ambientLight
-                new DimensionType.MonsterSettings(true, false, ConstantInt.of(0), 0)
+                0.0f, // ambientLight
+                new DimensionType.MonsterSettings(false, false, UniformInt.of(0, 7), 0)
         ));
     }
 
@@ -61,8 +61,8 @@ public class ModDimensions {
         NoiseBasedChunkGenerator noiseBasedChunkGenerator = new NoiseBasedChunkGenerator(
                 MultiNoiseBiomeSource.createFromList(
                         new Climate.ParameterList<>(List.of(Pair.of(
-                                        Climate.parameters(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.ENCHANED_FOREST)),
-                                Pair.of(Climate.parameters(0.3F, 0.6F, 0.1F, 0.1F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.OCEAN)),
+                                        Climate.parameters(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.CRYSTAL_CAVES)),
+                                Pair.of(Climate.parameters(0.1F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.ENCHANED_FOREST)),
                                 Pair.of(Climate.parameters(0.4F, 0.3F, 0.2F, 0.1F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.DARK_FOREST))
                         ))),
                 noiseGenSettings.getOrThrow(NoiseGeneratorSettings.OVERWORLD));
