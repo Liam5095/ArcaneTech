@@ -1,8 +1,6 @@
 package net.wickedbog.arcanetechmod.worldgen.biome;
 
-import net.minecraft.client.renderer.DimensionSpecialEffects;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.tags.BiomeTagsProvider;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
@@ -40,17 +38,11 @@ public class ModBiomes {
 
         globalOverworldGeneration(biomeBuilder);
 
-        // Custom
-
         BiomeDefaultFeatures.addDefaultFlowers(biomeBuilder);
         BiomeDefaultFeatures.addDefaultGrass(biomeBuilder);
 
-        // CUSTOM SPAWNS
-
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.WOLF, 5, 2, 5));
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityInit.FAIRY_SWARM.get(), 5, 2, 4));
-
-        // DEFAULT SPAWNS
 
         BiomeDefaultFeatures.farmAnimals(spawnBuilder);
         BiomeDefaultFeatures.commonSpawns(spawnBuilder);
@@ -79,7 +71,7 @@ public class ModBiomes {
                 new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
 
         globalOverworldGeneration(biomeBuilder);
-        // Custom
+
         BiomeDefaultFeatures.addDripstone(biomeBuilder);
         BiomeDefaultFeatures.addExtraGold(biomeBuilder);
         BiomeDefaultFeatures.addMountainTrees(biomeBuilder);
