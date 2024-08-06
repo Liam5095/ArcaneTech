@@ -15,9 +15,11 @@ import net.neoforged.neoforge.event.TickEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlerEvent;
 import net.neoforged.neoforge.network.handling.IPlayPayloadHandler;
 import net.neoforged.neoforge.network.registration.IPayloadRegistrar;
+import net.wickedbog.arcanetechmod.core.init.block.BlockEntityInit;
 import net.wickedbog.arcanetechmod.core.init.block.BlockInit;
 import net.wickedbog.arcanetechmod.core.init.CreativeModeTabInit;
 import net.wickedbog.arcanetechmod.core.init.entity.EntityInit;
+import net.wickedbog.arcanetechmod.core.init.gui.MenuTypeInit;
 import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 import net.wickedbog.arcanetechmod.core.particle.ParticleInit;
 import net.wickedbog.arcanetechmod.data.DataGenerators;
@@ -40,9 +42,14 @@ public class ArcaneTechMod {
         // Registers
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
-        CreativeModeTabInit.CREATIVE_MODE_TABS.register(bus);
-        EntityInit.REGISTRY.register(bus);
+
+        EntityInit.ENTITYS.register(bus);
+        BlockEntityInit.BLOCK_ENTITIES.register(bus);
+
         ParticleInit.PARTICLE_TYPES.register(bus);
+        CreativeModeTabInit.CREATIVE_MODE_TABS.register(bus);
+
+        MenuTypeInit.MENUS.register(bus);
 
         ModTerraBlenderAPI.registerRegions();
 

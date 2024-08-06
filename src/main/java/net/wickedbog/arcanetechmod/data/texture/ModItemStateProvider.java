@@ -26,6 +26,7 @@ public class ModItemStateProvider extends ItemModelProvider {
         item(ItemInit.MYTHIC_POWDER.get());
 
         saplingItem(BlockInit.GLOWWOOD_SAPLING.get());
+        withExistingParent(ItemInit.FAIRY_SWARM_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private void item(Item item) {

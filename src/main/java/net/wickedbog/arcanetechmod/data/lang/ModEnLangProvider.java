@@ -42,6 +42,9 @@ public class ModEnLangProvider extends LanguageProvider {
         addBlock(BlockInit.GLOWWOOD_LEAVES, "Glowwood Leaves");
         addBlock(BlockInit.GLOWWOOD_SAPLING, "Glowwood Sapling");
         addBlock(BlockInit.MYSTIC_FLOWER, "Mystic Flower");
+        addBlock(BlockInit.RED_CRYSTAL, "Red Crystal");
+        addBlock(BlockInit.GREEN_CRYSTAL, "Green Crystal");
+        addBlock(BlockInit.BLUE_CRYSTAL, "Blue Crystal");
 
         // Others
         add("creativetab.arcanemod", "ArcaneTech Tab");

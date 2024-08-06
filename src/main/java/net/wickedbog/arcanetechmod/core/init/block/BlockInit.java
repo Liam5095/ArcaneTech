@@ -2,18 +2,13 @@ package net.wickedbog.arcanetechmod.core.init.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
@@ -131,6 +126,12 @@ public class BlockInit {
 
     public static final DeferredBlock<Block> MYSTIC_FLOWER = registerBlock("mystic_flower", () ->
             new MysticFlowerBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILAC)));
+
+    // ENERGY RELATED
+
+    public static final DeferredBlock<Block> ARCANE_CAPACITOR = registerBlock("arcane_capacitor", () ->
+            new ArcaneCapacitorBlock(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1f, 10f)));
+
     public static DeferredBlock<Block> registerBlock(
             String name, Supplier<Block> block) {
         DeferredBlock<Block> blockReg = BLOCKS.register(name, block);

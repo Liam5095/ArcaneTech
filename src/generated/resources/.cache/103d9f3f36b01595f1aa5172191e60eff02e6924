@@ -1,4 +1,4 @@
-// 1.20.4	2024-08-04T08:38:46.9527328	Registries
+// 1.20.4	2024-08-04T16:32:58.3870239	Registries
 1d3cfd80c2254fc118fba9b946e7556ce1bdfaeb data/arcanetechmod/dimension/mythical_realm.json
 015d3f6d91ee8a46598e5463791c57d27c8a36dc data/arcanetechmod/dimension_type/mythical_realm_type.json
 7ad24ac1cded81b405b6601bea0dc6dd22f26efe data/arcanetechmod/neoforge/biome_modifier/add_arcane_ore.json
@@ -9,7 +9,7 @@
 758d4fe74b2fbcacd4d825e318251e7b332ac37d data/arcanetechmod/neoforge/biome_modifier/add_red_crystal.json
 97676c0cd77f989883db600b242976a35c62e58a data/arcanetechmod/neoforge/biome_modifier/add_runic_ore.json
 e07539141c50a870060fddbfe98bda7414abb87b data/arcanetechmod/neoforge/biome_modifier/add_tree_glowwood.json
-36641f88a359a7c7cb3e3da70aa9ec1838461e45 data/arcanetechmod/worldgen/biome/crystal_caves.json
+36ec40bc36ed899e6a82dc2d6bb9eaf9837bea91 data/arcanetechmod/worldgen/biome/crystal_caves.json
 2dea38bb34cbde7ed6d98b1509de00a27322947c data/arcanetechmod/worldgen/biome/enchaned_forest.json
 bfd3f2ea272f00dd64f4c6d71b32ce52da6f3709 data/arcanetechmod/worldgen/configured_feature/arcane_ore.json
 f4a09af9f0cde1a59a71d1fae61f8a3620e446e4 data/arcanetechmod/worldgen/configured_feature/blue_crystal.json
