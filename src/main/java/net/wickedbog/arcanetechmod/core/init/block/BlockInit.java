@@ -2,7 +2,6 @@ package net.wickedbog.arcanetechmod.core.init.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
@@ -14,6 +13,11 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wickedbog.arcanetechmod.ArcaneTechMod;
 import net.wickedbog.arcanetechmod.core.init.TreeGrowerInit;
 import net.wickedbog.arcanetechmod.core.init.block.custom.*;
+import net.wickedbog.arcanetechmod.core.init.block.custom.energy.FanBlock;
+import net.wickedbog.arcanetechmod.core.init.block.custom.energy.GeneratorBlock;
+import net.wickedbog.arcanetechmod.core.init.block.custom.energy.SolarPanelBlock;
+import net.wickedbog.arcanetechmod.core.init.block.custom.energy.cables.block.CableBlock;
+import net.wickedbog.arcanetechmod.core.init.block.custom.energy.cables.block.FacadeBlock;
 import net.wickedbog.arcanetechmod.core.init.item.ItemInit;
 
 import java.util.function.Supplier;
@@ -129,8 +133,16 @@ public class BlockInit {
 
     // ENERGY RELATED
 
-    public static final DeferredBlock<Block> ARCANE_CAPACITOR = registerBlock("arcane_capacitor", () ->
-            new ArcaneCapacitorBlock(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1f, 10f)));
+    public static final DeferredBlock<Block> SOLAR_PANEL = registerBlock("solar_panel", () ->
+            new SolarPanelBlock(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1f, 10f)));
+    public static final DeferredBlock<Block> FAN = registerBlock("fan_block", FanBlock::new);
+
+    public static final DeferredBlock<Block> CABLE = registerBlock("cable", CableBlock::new);
+
+    public static final DeferredBlock<Block> FACADE_BLOCK = registerBlock("facade", FacadeBlock::new);
+
+    public static final DeferredBlock<Block> GENERATOR_BLOCK = registerBlock("generator_block", () ->
+            new GeneratorBlock(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1f, 10f)));
 
     public static DeferredBlock<Block> registerBlock(
             String name, Supplier<Block> block) {

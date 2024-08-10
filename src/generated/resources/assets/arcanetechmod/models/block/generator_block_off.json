@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "arcanetechmod:block/machine_bottom",
+    "east": "arcanetechmod:block/machine_side",
+    "north": "arcanetechmod:block/generator_block",
+    "particle": "arcanetechmod:block/machine_side",
+    "south": "arcanetechmod:block/machine_side",
+    "up": "arcanetechmod:block/machine_top",
+    "west": "arcanetechmod:block/machine_side"
+  }
+}

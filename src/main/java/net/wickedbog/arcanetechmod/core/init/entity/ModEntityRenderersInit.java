@@ -4,7 +4,7 @@
  */
 package net.wickedbog.arcanetechmod.core.init.entity;
 
-import net.wickedbog.arcanetechmod.core.client.renderer.FairySwarmRenderer;
+import net.wickedbog.arcanetechmod.core.client.entity.renderer.FairySwarmRenderer;
 
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.fml.common.Mod;

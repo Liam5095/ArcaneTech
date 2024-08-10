@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arcanetechmod:block/fan_base",
+    "up": "arcanetechmod:block/fan_base",
+    "north": "arcanetechmod:block/fan_front",
+    "east": "arcanetechmod:block/fan_base",
+    "south": "arcanetechmod:block/fan_base",
+    "west": "arcanetechmod:block/fan_base",
+    "particle": "arcanetechmod:block/fan_base"
+  },
+  "render_type": "solid"
+}

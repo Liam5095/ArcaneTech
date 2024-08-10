@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "arcanetechmod:block/fan"
+    },
+    "facing=east": {
+      "model": "arcanetechmod:block/fan",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "arcanetechmod:block/fan",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arcanetechmod:block/fan",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "arcanetechmod:block/fan",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "arcanetechmod:block/fan",
+      "x": 90
+    }
+  }
+}

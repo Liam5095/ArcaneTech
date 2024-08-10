@@ -8,7 +8,7 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
-import net.wickedbog.arcanetechmod.core.client.model.ModelFairySwarm;
+import net.wickedbog.arcanetechmod.core.client.entity.model.ModelFairySwarm;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class ModModelsInit {

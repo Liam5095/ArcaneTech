@@ -1,0 +1,9 @@
+{
+  "parent": "arcanetechmod:custom/solar_panel",
+  "textures": {
+    "all": "arcanetechmod:block/solar_panel",
+    "particle": "arcanetechmod:block/solar_panel",
+    "1": "arcanetechmod:block/solar_panel"
+  },
+  "render_type": "solid"
+}

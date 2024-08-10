@@ -1,4 +1,4 @@
-package net.wickedbog.arcanetechmod.core.client.model;
+package net.wickedbog.arcanetechmod.core.client.entity.model;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
@@ -15,7 +15,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class ModelFairySwarm<T extends Entity> extends EntityModel<T> {
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "fairyswarmmodel"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("arcanetechmod", "fairyswarmmodel"), "main");
 	private final ModelPart bb_main;
 
 	public ModelFairySwarm(ModelPart root) {
